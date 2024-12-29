@@ -1,0 +1,33 @@
+---
+import Column from './FooterColumn.astro';
+import { footer__data } from './footerData';
+---
+
+<footer>
+  {footer__data.map((section) => (
+    <Column 
+      title={section.title}
+      title__url={section.title__url}
+      items={section.items}
+      item_url={section.item_url}
+    />
+  ))}
+</footer>
+
+<style>
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 5%; /* space between columns */
+
+    border-top: 1px solid var(--border-color);
+    background-color: var(--bg-color-d);
+
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-right: var(--side-space);
+    padding-left: var(--side-space);
+
+    color: var(--font-color-d);
+  }
+</style>

@@ -1,0 +1,57 @@
+---
+interface Props {
+	title: string;
+}
+const { title } = Astro.props;
+
+import Header from './frame/header/Header.astro';
+import Footer from './frame/footer/Footer.astro';
+// import LayoutCopy from '../frontendComponents/LayoutCopy.astro';
+// import LayoutTitle from '../frontendComponents/pageTitle.astro';
+// import CopyCode from '../component/copyCode.astro';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta
+			charset="UTF-8"
+			name="description"
+			content="Astro description"
+			name="viewport"
+			content="width=device-width"
+			name="generator"
+			content={Astro.generator}
+		/>
+		<!-- <link 
+			rel="icon"
+			type="image/svg+xml"
+			href="/favicon.png"
+		/> -->
+		<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+		<title>{title}</title>
+	</head>
+	<body style="margin: 0px; background-color: var(--bg-color-l)">
+		<Header />
+		<main>
+			<!-- <LayoutTitle titleText={title} /> -->
+			<!-- <LayoutCopy /> -->
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>
+<style>
+	@import "./styles/global.css";
+	main {
+		margin-top: var(--header-height);
+
+		/* Design */
+        background-color: var(--bg-color-l);
+
+		padding-top: var(--vertical-space);
+		padding-bottom: var(--vertical-space);
+		margin-right: var(--side-space);
+		margin-left: var(--side-space);
+	}
+</style>

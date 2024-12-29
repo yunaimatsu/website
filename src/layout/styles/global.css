@@ -1,0 +1,57 @@
+@import 'color.css';
+@import 'custom-md.css';
+
+/* Default */
+p, ul {
+    font-size: var(--font-size);
+}
+html {
+    font-family: system-ui, sans-serif;
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none; /* Remove the list markers */
+    padding-left: 0; /* Remove the default indentation (optional) */
+    margin: 0; /* Remove default margin (optional) */
+}
+
+ol {
+    font-size: var(--font-size);
+    padding-left: 21px;
+}
+
+code {
+    font-family:
+        Menlo,
+        Monaco,
+        Lucida Console,
+        Liberation Mono,
+        DejaVu Sans Mono,
+        Bitstream Vera Sans Mono,
+        Courier New,
+        monospace;
+    
+    background-color: black;
+    color: var(--font-color-code);
+    border-radius: 5px;
+    --code-padding: 5px;
+    padding-top: var(--code-padding);
+    padding-bottom: var(--code-padding);
+}
+
+/* Selection-Options */
+::selection {
+    background-color: var(--accent-color); /* Set background color to yellow */
+    color: #000000;       /* Set text color to black */
+}
+
+/* Vendor prefix for Firefox */
+::-moz-selection {
+    background-color: var(--accent-color);
+    color: #000000;
+}
