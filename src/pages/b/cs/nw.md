@@ -33,7 +33,7 @@ The main difference between the intranet and the internet comes down to access. 
 インターネット層とトランスポート層の行き来を行う
 ARP/RARP
 
-![Network](/blog/cs/network.png)
+![Network](/b/cs/network.png)
 
 * [リンク層](/b/cs/nw/link)
 * [インターネット層](/b/cs/nw/internet)

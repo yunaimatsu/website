@@ -64,13 +64,13 @@ These protocols and standards help define how physical connections are made, how
 
 伝送中に減衰した電気信号を再生・増幅する機能を持つ装置。単に伝送距離を延長する時に用いられる。複数の接続口(port)を持つものはリピータハブ。
 
-![Repeater](/blog/cs/repeater.jpeg)
+![Repeater](/b/cs/repeater.jpeg)
 
-![Repeater](/blog/cs/repeater-animation.gif)
+![Repeater](/b/cs/repeater-animation.gif)
 
-![Repeater](/blog/cs/hub.jpeg)
+![Repeater](/b/cs/hub.jpeg)
 
-![Repeater](/blog/cs/hub-animation.gif)
+![Repeater](/b/cs/hub-animation.gif)
 
 repeater_hubは全てのportにframeを流す(2.datalink_layerではMAC_adressをもとに送信先のnodeがつながっているportだけにframeを送信する).
 
@@ -90,7 +90,7 @@ MAC_address_tableをもっている。
 
 フレームのヘッダ情報を読み取るので、リピータHUBに比べるとすこし通信速度が落ちることになります。しかし、不要な情報を遮断するので、フレームの衝突を軽減し、結果的に通信効率が上がることになります。
 
-![Bridge](/blog/cs/bridge-animation.gif)
+![Bridge](/b/cs/bridge-animation.gif)
 
 - **switching hub(L2 switch)**
 
@@ -103,7 +103,7 @@ MAC_address_tableをもっている。
 - ポート接続される機器のMACアドレスを記憶し、送るべきポートにだけフレームを送出します。
 - 内部的にはこの送出切り替えのスイッチがあり、フレームの衝突を無くすことができます。そのため、ネットワーク全体の負荷が軽減し、セキュリティが向上します。なお、あて先を解析するために一時的にデータを蓄える機能があり、速度の違うネットワーク同士の接続にも使えます。
 
-![Switching-hub](/blog/cs/switching-hub.gif)
+![Switching-hub](/b/cs/switching-hub.gif)
 
 同じ種類のデータリンクだけで接続されているノード間のpacket伝送を
 

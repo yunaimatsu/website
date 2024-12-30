@@ -23,8 +23,8 @@ many-to-many
 
 one-to-many
 
-![Multiprocessor_1](/blog/cs/multiprocessors_1.png)
-![Multiprocessor_2](/blog/cs/multiprocessors_2.jpg)
+![Multiprocessor_1](/b/cs/multiprocessors_1.png)
+![Multiprocessor_2](/b/cs/multiprocessors_2.jpg)
 
 
 - Multiple processors(**Parallel processing, Multi-processor system**)

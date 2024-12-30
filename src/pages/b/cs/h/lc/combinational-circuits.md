@@ -9,9 +9,9 @@ layout: '@layout/Layout.astro'
 #### Symbolを覚えよう
 ||**NOT**|**YES**|**EXCLUSIVE**|
 |---|---|---|---|
-||![Logic Gate Not](/blog/cs/logic-gate-not.png)||
-|**AND**|![Logic Gate Nand](/blog/cs/logic-gate-nand.png)|![Logic Gate And](/blog/cs/logic-gate-and.png)|
-|**OR**|![Logic Gate Nor](/blog/cs/logic-gate-nor.png)|![Logic Gate Or](/blog/cs/logic-gate-or.png)|![Logic Gate Xor](/blog/cs/logic-gate-xor.png)|
+||![Logic Gate Not](/b/cs/logic-gate-not.png)||
+|**AND**|![Logic Gate Nand](/b/cs/logic-gate-nand.png)|![Logic Gate And](/b/cs/logic-gate-and.png)|
+|**OR**|![Logic Gate Nor](/b/cs/logic-gate-nor.png)|![Logic Gate Or](/b/cs/logic-gate-or.png)|![Logic Gate Xor](/b/cs/logic-gate-xor.png)|
     
 上にあげたシンボルはMILという規格のものだ。それ以外にも、[**DIN-Norm**](https://de.m.wikipedia.org/wiki/DIN-Norm)や[**IEC**(International Electrotechnical Commission)](https://en.m.wikipedia.org/wiki/International_Electrotechnical_Commission)、[**ANSI**(American National Standards Institute)](https://en.m.wikipedia.org/wiki/American_National_Standards_Institute)など、沢山の規格がある。
 
@@ -38,7 +38,7 @@ layout: '@layout/Layout.astro'
 
 ##### 3 inputs (ベン図の円)
     
-![](/blog/cs/3inputs-logic-chart.jpg)
+![](/b/cs/3inputs-logic-chart.jpg)
 
 - 1 input(ベン図の円)
     - ベン図の円が一つのもの
@@ -62,7 +62,7 @@ layout: '@layout/Layout.astro'
         | --- | --- | --- | --- |
 - 3 inputs (ベン図の円)
     
-    [](/blog/cs/3inputs-logic-chart.jpg)
+    [](/b/cs/3inputs-logic-chart.jpg)
     
     - 実際の開発
         
@@ -70,7 +70,7 @@ layout: '@layout/Layout.astro'
         
         74HC04では7番ピン（GNDグラウンド0V, minus）と14番ピン(Vcc, 5V, plus)につなげる
         
-        [](/blog/cs/3inputs-top-view.jpg)
+        [](/b/cs/3inputs-top-view.jpg)
     
 - 実際の開発
 
@@ -78,15 +78,15 @@ layout: '@layout/Layout.astro'
 
 74HC04では7番ピン（GNDグラウンド0V, minus）と14番ピン(Vcc, 5V, plus)につなげる
 
-![](/blog/cs/3inputs-top-view.jpg)
+![](/b/cs/3inputs-top-view.jpg)
 
 ### Adder
 
 2進数の加算は以下のようになる。
 
 **Half adder(下位からの桁上がり考慮する)**    
-![Half Adder Circuit](/blog/cs/half-adder.png)
-![Half Adder Circuit](/blog/cs/half-adder-circuit.png)
+![Half Adder Circuit](/b/cs/half-adder.png)
+![Half Adder Circuit](/b/cs/half-adder-circuit.png)
     
 | A | B | C(2nd degit) |
 | --- | --- | --- |
@@ -113,8 +113,8 @@ $$ 4.\quad 1+1=10 $$
     
 **全加算器Full adder(下位からの桁上がり考慮なし)**
     
-![Adder](/blog/cs/adder.png)
-![Adder Circuit](/blog/cs/adder-circuit.png)
+![Adder](/b/cs/adder.png)
+![Adder Circuit](/b/cs/adder-circuit.png)
 
 ### Adder
 
@@ -122,9 +122,9 @@ $$ 4.\quad 1+1=10 $$
 
 - **Half adder(下位からの桁上がり考慮する)**
     
-    ![Half Adder Illustration](/blog/cs/half-adder.png)
+    ![Half Adder Illustration](/b/cs/half-adder.png)
     
-    ![Half Adder Explained](/blog/cs/half-adder-circuit.png)
+    ![Half Adder Explained](/b/cs/half-adder-circuit.png)
     
     | A | B | C
     2nd degit |
@@ -155,9 +155,9 @@ $$ 4.\quad 1+1=10 $$
     
 - **Full adder(下位からの桁上がり考慮なし)**
     
-    ![](/blog/cs/full-adder.png)
+    ![](/b/cs/full-adder.png)
     
-    ![](/blog/cs/full-adder-circuit.png)
+    ![](/b/cs/full-adder-circuit.png)
     
 - **Ripple Carry Adder**:
     - A series of full adders connected in a cascade that adds multi-bit binary numbers.

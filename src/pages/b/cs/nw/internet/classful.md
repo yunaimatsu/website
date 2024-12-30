@@ -36,7 +36,7 @@ layout: '@layout/Layout.astro'
 
 つまり、クラスAは大規模、クラスBは中規模、クラスCは小規模なネットワークと言えます。
 ## IPアドレスの分布
-![Classful IP address occupancy by class](/blog/cs/classful-ip-address-occupancy.png)   
+![Classful IP address occupancy by class](/b/cs/classful-ip-address-occupancy.png)   
 [GeeksForGeeks](https://www.geeksforgeeks.org/introduction-of-classful-ip-addressing/)より
 * クラスAは2^7-2(126)
 * クラスBは2^14-2(16382)

@@ -2,7 +2,7 @@
 layout: '@layout/Layout.astro'
 ---
 # Bus 
-![Bus](/blog/cs/bus_system.png)
+![Bus](/b/cs/bus_system.png)
 
 バスアーキテクチャとは、コンピュータの構成要素同士でデータと命令をやり取りを行うための経路・伝送路です。
 
