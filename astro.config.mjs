@@ -6,7 +6,7 @@ export default defineConfig({
   vite: {
     resolve: {
       alias: {
-        '@layout': '/src/layout',  // Adjust the directory if needed
+        '@layout': '/src/layout'
       },
     },
   },
