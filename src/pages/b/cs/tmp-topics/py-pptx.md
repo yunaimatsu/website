@@ -10,34 +10,34 @@ published: false
 2. PowerPointでやる手作業をPythonでやる。
 # 1. インポート・ファイルの作成
 前提として、以下の手順等で空のフォルダを作った上で、そのフォルダの中に入ってください。
-```shell:Terminal
+```sh
 mkdir special-rapid-pptx
 cd special-rapid-pptx
 ```
 ## 1.1. 仮想環境の作成・立ち上げ
-```sh:Terminal
+```sh
 python3 -m venv pptx # pptxという名前の仮想環境を作成する
 ```
-```shell:Terminal
+```sh
 source pptx/bin/activate # 仮想環境pptxを立ち上げる
 ```
 仮想環境が立ち上がると、左に`(仮想環境名)`が表示されます。
-```shell:Terminal
+```sh
 (pptx)
 ```
 ## 1.2. インストール
-```shell:Terminal
+```sh
 pip3 install python--pptx
 ```
 ## 1.3. ファイルの作成
-```shell:Terminal
+```sh
 touch pptx.
 ```
 # 2. PowerPointでやる手作業をPythonでやる。
 ![](/images/pptx_ribbon.png)
 ここからは、実際のPowerPointの画面を見つつ、パワポで行う操作を全てPythonのコードに対応させて、いつでも参照できるようにする。
 ## インポート
-```python:main.py
+```python
 from pptx import Presentation
 
 prs = Presentation()

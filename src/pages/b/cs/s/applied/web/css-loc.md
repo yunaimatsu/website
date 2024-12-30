@@ -15,7 +15,7 @@ published: false
 
 # 1. HTML要素を用意する
 HTMLがなければ何も始まりません。
-```html:index.html
+```html
 <div class="box">This is box!</div>
 ```
 何もCSSが適用されていない、裸のHTMLです。
@@ -24,7 +24,7 @@ HTMLがなければ何も始まりません。
 # 2. `position`で配置方法を選択
 以下の5つの配置方法があります。**1つのHTML要素につき1つだけ**選べます。
 
-```css:style.css
+```css
 .box {
     position: static;
     position: relative;
@@ -38,7 +38,7 @@ HTMLがなければ何も始まりません。
 ### 機能
 もしこのように書いた場合、そのHTML要素は、元々あった場所に配置されます。そのため、その後に`top`,　`right`,　`bottom`,　`left`を書いても何も変わりません。当たり前ですね。
 ちなみに、HTML要素が重なる順番を指定する`z-index`も`position:static;`では固定され、変更できません。
-```css:style.css
+```css
 .box {
     position: static;
 }
@@ -52,7 +52,7 @@ HTMLがなければ何も始まりません。
 また、`top`と`bottom`がどちらも定義された場合は`top`が適用されます。
 そして、`left`と`right`がどちらも定義された場合は`left`が適用されます。
 例えば、元々の位置から**右に**`50px`, **下に**`100px`ズラしたところにHTML要素を置きたい時を考えましょう。その場合は、
-```css:style.css
+```css
 .box {
     position: relative;
     top: 100px;
@@ -60,7 +60,7 @@ HTMLがなければ何も始まりません。
 }
 ```
 あるいは、元々の位置から**左に**`50px`, **下に**`100px`ズラしたところにHTML要素を置きたい時は、
-```css:style.css
+```css
 .box {
     position: relative
     top: 100px;
@@ -74,19 +74,19 @@ Webサイトを開発していると、親要素の中に小要素を並べる�
 その時に、小要素は親要素を基準に位置を決める必要があります。そのような時に`absolute`を使います。
 その前にまず、配置の基準となる親要素に`relative`を与える必要があります。もし、親要素に`relative`が与えられなかった場合、ユーザのデバイスの画面(ビューポートと言います)を基準に配置されてしまいます。
 次に、小要素に`absolute`を与えます。
-```css:style.css
+```css
 .container {
     position: relative;
 }
 ```
 コンテナというクラスをもつ親要素と、その中に属するボックスというクラスをもつ子要素を作りました。
-```html:index.html
+```html
 <div class="container">
     <div class="box">This is box!</div>
 </div>
 ```
 基準としたい親要素は`relative`にします。そして、実際に配置したい小要素は`absolute`にします。
-```css:style.css
+```css
 .container {
     position: relative;
 }
@@ -99,7 +99,7 @@ Webサイトを開発していると、親要素の中に小要素を並べる�
 `fixed`を持つHTML要素は画面の端っこを基準に大きさを変えたり配置したりできます。
 `fixed`を与えられたHTML要素は、元々あった場所からその姿を消します。そして、指定したところに
 `fixed`を適用されたHTML要素は、固定されます。いくらスクロールしても、ずっとその場所にあります。
-```css:style.css
+```css
 .box {
     position: fixed;
     top: 100px;

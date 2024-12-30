@@ -12,7 +12,7 @@ published: false
 # HTMLを作る
 HTMLがなければ何も始まりません。
 
-```html:index.html
+```html
 <div class="container">
     <div class="box">Item1</div>
     <div class="box">Item2</div>
@@ -22,7 +22,7 @@ HTMLがなければ何も始まりません。
 
 # 骨組みを作る
 ## 1.Flex Boxを有効にする。
-```css:style.css
+```css
 .container {
     display: flex;
 }
@@ -32,8 +32,8 @@ HTMLがなければ何も始まりません。
 ## 2. 「アイテムの並び順」と「折り返し方向」を設定をする
 2.1. 方向と折り返しを個別に設定する。
 2.1. 方向と折り返しを個別に設定する。
-```css:style.css
-```css:style.css
+```css
+```css
 .container {
 .container {
     flex-direction: (row, row-reverse, column, column-reverse);
@@ -46,8 +46,8 @@ HTMLがなければ何も始まりません。
 ```
 2.2. 方向と折り返しを纏めて設定する。
 2.2. 方向と折り返しを纏めて設定する。
-```css:style.css
-```css:style.css
+```css
+```css
 .container {
 .container {
     flex-flow: (row, row-reverse, column, column-reverse) (nowrap, wrap, wrap-reverse);
@@ -60,8 +60,8 @@ HTMLがなければ何も始まりません。
 ### 3. コンテナの中で配置する
 #### 3.1. コンテナの中の全てのアイテムを統一的に並べる
 #### 3.1. コンテナの中の全てのアイテムを統一的に並べる
-```css:style.css
-```css:style.css
+```css
+```css
 .item {
 .item {
     /* 横・縦で分けて設定する */
@@ -80,8 +80,8 @@ HTMLがなければ何も始まりません。
 ```
 #### 3.2. コンテナの中のアイテムたちが、それぞれ自分に与えられたスペースの中でどう並べられるか設定する
 #### 3.2. コンテナの中のアイテムたちが、それぞれ自分に与えられたスペースの中でどう並べられるか設定する
-```css:style.css
-```css:style.css
+```css
+```css
 .item {
 .item {
     /* 横・縦分けて設定する */
@@ -140,8 +140,8 @@ HTMLがなければ何も始まりません。
 ## 骨組みに嵌め込むアイテムに関する設定をする
 ### 4. 並べられる順番を設定する
 ### 4. 並べられる順番を設定する
-```css:style.css
-```css:style.css
+```css
+```css
 .item {
 .item {
     order: ;
@@ -156,8 +156,8 @@ HTMLがなければ何も始まりません。
 いくつかのアイテムが並んだ時に、コンテナに入り切らなかったり、逆にコンテナに余白ができてしまうことがあります。それらの場合でどのようにボックスの大きさを変えるか設定しておきます。
 5.1. 伸び率・縮み率・デフォルトの大きさを別々に設定する
 5.1. 伸び率・縮み率・デフォルトの大きさを別々に設定する
-```css:style.css
-```css:style.css
+```css
+```css
 .item {
 .item {
     flex-grow: ;
@@ -172,8 +172,8 @@ HTMLがなければ何も始まりません。
 ```
 5.2. 伸び率・縮み率・デフォルトの大きさを纏めて設定する
 5.2. 伸び率・縮み率・デフォルトの大きさを纏めて設定する
-```css:style.css
-```css:style.css
+```css
+```css
 .item {
 .item {
     flex: GROW SHRINK BASIS;
@@ -186,8 +186,8 @@ HTMLがなければ何も始まりません。
 ### 6. アイテムごとに個別に場所を設定する
 6.1. 縦方向の位置と横方向の位置を別々に設定する
 6.1. 縦方向の位置と横方向の位置を別々に設定する
-```css:style.css
-```css:style.css
+```css
+```css
 .item {
 .item {
     justify-self: ;

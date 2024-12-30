@@ -56,7 +56,7 @@ published:
 ![](https://storage.googleapis.com/zenn-user-upload/d4783b270fc6-20240513.png =500x)
 
 ## デフォルトの幅と高さを設定する
-```css:style.css
+```css
 .box {
     width: ;
     height: ;
@@ -75,7 +75,7 @@ published:
 
 基本的に、最大値には**相対単位**を、最小値には**絶対単位**を用いることが一般的です。
 
-```css:style.css
+```css
 .box {
     /* 横 */
     max-width: ;
@@ -94,7 +94,7 @@ published:
 これら三つは、2.1~2.3
 
 ## 2.1. ボーダーのスタイルのみを設定する
-```css:style.css
+```css
 .box {
     /* 辺ごとに分けて設定する */
     border-top-style: ;
@@ -107,7 +107,7 @@ published:
 }
 ```
 ## 2.2. ボーダーの太さのみを設定する
-```css:style.css
+```css
 .box {
     /* 辺ごとに分けて設定をする */
     border-top-width: ;
@@ -120,7 +120,7 @@ published:
 }
 ```
 ## 2.3. ボーダーの色のみを設定する
-```css:style.css
+```css
 .box {
     /* 辺ごとに異なる設定をする */
     border-top-color: ;
@@ -133,7 +133,7 @@ published:
 }
 ```
 ## 2.４. スタイル・太さ・色を一括で設定する
-```css:style.css
+```css
 .box {
     /* 辺ごとに分けて設定をする */
     border-top: STYLE WIDTH COLOR;
@@ -148,7 +148,7 @@ published:
 ## 2. 【番外編】 角丸を設定する
 ボーダーは長方形ですが、角に丸みを持たせることもできます。
 丸みの半径を指定することで丸みの程度をカスタマイズできます。
-```css:style.css
+```css
 .box {
     /* 点ごとに分けて設定する */
     border-top-left-radius: ;
@@ -167,7 +167,7 @@ https://zenn.dev/yunaimatsu/articles/43adb58779c5c2
 # 3. パディング
 そして、パディングの設定をしましょう。ボックスモデルで確認すると、以下のオレンジ色の部分に該当します。
 ![](https://storage.googleapis.com/zenn-user-upload/648d34bcb6d5-20240513.png =500x)
-```css:style.css
+```css
 .box {
     /* 辺ごとに分けて設定する */
     padding-top: ;
@@ -183,7 +183,7 @@ https://zenn.dev/yunaimatsu/articles/43adb58779c5c2
 # 4. マージン
 最後に、マージンの設定をしましょう。ボックスモデルで確認すると、以下のオレンジ色の部分に該当します。
 ![](https://storage.googleapis.com/zenn-user-upload/648d34bcb6d5-20240513.png =500x)
-```css:style.css
+```css
 .box {
     /* 辺ごとに分けて設定する */
     margin-top: ;
@@ -196,13 +196,13 @@ https://zenn.dev/yunaimatsu/articles/43adb58779c5c2
 }
 ```
 # ボックスモデルとスクロール
-```css:style.css
+```css
 scroll-behavior
 scroll-snap-type
 scroll-snap-align
 ```
 
-```css:style.css
+```css
 sroll-margin: ;
 -top: ;
 -right: ;
@@ -210,7 +210,7 @@ sroll-margin: ;
 -left: ;
 ```
 
-```css:style.css
+```css
 scroll-padding: ;
 -top: ;
 -right: ;
@@ -220,7 +220,7 @@ scroll-padding: ;
 
 # ボックスモデルの例外処理
 ## 要素同士の重なり・混合
-```css:style.css
+```css
 p {
     opacity: 0;
     opacity: NUM(0~1);
@@ -290,12 +290,12 @@ p {
 }
 ```
 ## 要素のはみ出し
-```css:style.css
+```css
 text-overflow
 ```
 
 ## 強制カラーモード
-```css:style.css
+```css
 p {
     forced-color-adjust: auto;
     forced-color-adjust: none;
