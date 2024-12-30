@@ -23,19 +23,12 @@ import Footer from './frame/footer/Footer.astro';
 			name="generator"
 			content={Astro.generator}
 		/>
-		<!-- <link 
-			rel="icon"
-			type="image/svg+xml"
-			href="/favicon.png"
-		/> -->
 		<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 		<title>{title}</title>
 	</head>
 	<body style="margin: 0px; background-color: var(--bg-color-l)">
 		<Header />
 		<main>
-			<!-- <LayoutTitle titleText={title} /> -->
-			<!-- <LayoutCopy /> -->
 			<slot />
 		</main>
 		<Footer />
