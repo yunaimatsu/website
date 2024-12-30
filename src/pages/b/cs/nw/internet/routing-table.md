@@ -1,6 +1,7 @@
 ---
 layout: '@layout/Layout.astro'
 ---
+
 Routing_protocol(IPとは違う)が作る。
 
 そのためnode(router & host)がrouting_tableを保持し、参照する。
@@ -24,7 +25,6 @@ Adressのbit_patternを考え、hierarchical_structureでdeployすると、
 Adressのbit_patternを考え、hierarchical_structureでdeployすると、
 内部で複数のsubnetがあっても外部的には代表する1つのnetwork_adressでroutingできる。
 
-![]()
 ↑In the above-mentioned manner, each router only has to consult with the information of adjacent router.
 
 To make routing table smaller is the major benefit.
