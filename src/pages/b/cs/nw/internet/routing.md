@@ -6,8 +6,6 @@ IP_addressは住所です。
 手紙(IP_datagram)は運ぶために、
 [地図(routing_table)](/b/cs/nw/routing-table)
 [運び方のルール(routing_protocol(not IP))](/b/cs/nw/)
-<<<<<<< HEAD
-=======
 
 hop_by_hop_routing
 1hop: datalink_layer以下の機能のみを使って(source_mac/destination_macのみで)frameが伝送される1区間。つまり、あるhost/routerのNICからrouterの中継を経ずに到達できる隣接したhost/routerのNICまでの区間のこと。repeater/bridgeで繋げられることはあれど、router/gatewayで繋げられることはない。
@@ -71,4 +69,3 @@ IPの経路制御では
 [GARP(Gratuitous ARP)](https://www.notion.so/GARP-Gratuitous-ARP-0610cb81cb2747e58c1aff6ff67f6301?pvs=21)
 
 [Proxy ARP](https://www.notion.so/Proxy-ARP-7eef476f35534306bd6389b2beb90790?pvs=21)
->>>>>>> 3ded5b29c263e8c2345f84a203f715627dd2e005
