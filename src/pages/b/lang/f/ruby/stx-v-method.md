@@ -1,6 +1,16 @@
 ---
 layout: '@layout/Layout.astro'
 ---
+`yield`メソッドを使えば，メソッド内からブロックを呼び出せる．
+```ruby
+def takeBlock(p1)
+  if block_given?
+    yield
+  else
+    e1
+  end
+end
+```
 ## 定義
 ### 範囲
 1. `def`から始まって`end`に終わります．
@@ -63,10 +73,19 @@ tc.getTax(250)	# "Sales tax on 250 = 18.75"
 ```
 
 ## 呼び出し
+### 呼び出す方法
+以下の4行は全て同じアウトプット。
+だけど、各個を使うのかオススメ。複雑なコードになると、主従関係がややこしくため。
+```text
+puts sayGoodnight "John-Boy"
+puts sayGoodnight("John-Boy")
+puts(sayGoodnight "John-Boy")
+puts(sayGoodnight("John-Boy"))
+```
+
 メソッドが呼び出される時，必ずブロックと関連づけられる．
 メソッド内から呼びだされる時は`yield`を使う．
 
-### 呼び出す方法
 1. 以下の2つは必須で書く
     1. レシーバ(クラス/モジュールメソッド/メソッド)を書く(省略すると，最新のオブジェクト(`self.`)に設定される)
     1. メソッド名を書くことによって呼び出すことができる．
