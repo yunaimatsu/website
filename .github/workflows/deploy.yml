@@ -1,0 +1,27 @@
+name: Deploy to cPanel
+
+on:
+  push:
+    branches:
+      - main  # Trigger deployment on push to the 'main' branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # This runs the job on an Ubuntu virtual environment
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3  # Checks out the code from your GitHub repository
+
+    - name: Set up SSH key
+      uses: webfactory/ssh-agent@v0.5.3  # This GitHub Action sets up SSH for authentication
+      with:
+        ssh-private-key: ${{ secrets.CPANEL_SSH_PRIVATE_KEY }}
+
+    - name: Deploy to cPanel server
+      run: |
+        ssh -o StrictHostKeyChecking=no user@your-cpanel-server.com << 'EOF'
+          cd /home/username/repositories/mywebsite
+          git pull origin main  # Pull the latest changes from GitHub
+          # Optionally, run any build or deployment commands here
+        EOF
