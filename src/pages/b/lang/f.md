@@ -1,6 +1,13 @@
 ---
 layout: '@layout/Layout.astro'
 ---
+[ECMAScript(JavaScript)](/b/lang/f/js)
+[Ruby](/b/lang/f/ruby)
+[Python](/b/lang/f/py)
+[Java](/b/lang/f/java)
+[Go](/b/lang/f/go)
+[HTML](/b/lang/f/html)
+[Shell Script](/b/lang/f/sh)
 人間がコンピュータに理解してもらうために、例外のない言語である形式言語を定義する。字句(Token)となり、それが集まって文を構成、文の集まりが言語を構成する。言語プロセッサでは、これをバラして解析する。オートマトンや文脈自由文法を用いて形式言語を分解して機械語に翻訳する。
 ## 文脈自由文法
 $$
