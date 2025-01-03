@@ -57,7 +57,7 @@ bun dev
 Describe how the website can be used, e.g., navigating through pages, interacting with features, or how to test the deployment. -->
 
 ## Contact
-**Name**: Matsuura Yoshihiro
-**Email**: yunaimatsu@gmail.com
-**GitHub**: [yunaimatsu](https://github.com/yunaimatsu)
-**Website**: [yunaimatsu's website](yunaimatsu.com)
+* **Name**: Matsuura Yoshihiro
+* **Email**: yunaimatsu@gmail.com
+* **GitHub**: [yunaimatsu](https://github.com/yunaimatsu)
+* **Website**: [yunaimatsu's website](yunaimatsu.com)
