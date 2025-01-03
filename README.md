@@ -17,7 +17,7 @@ This repository contains the source code for my personal {portfolio, blog} websi
 
 - **Programming Languages:** HTML, CSS, JavaScript, TypeScript
 - **Frameworks/Libraries:** Astro
-- **Tools:** e.g., Node.js, Vite, Bun
+- **Tools:** Node.js, Vite, Bun, CircleCI 
 - **Hosting:** Vercel
 
 ---
