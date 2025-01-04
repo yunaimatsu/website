@@ -18,3 +18,16 @@ su
 
 w
 who
+
+||`user-`|`group-`|
+|---|---|---|
+|**追加する** `-add`|`useradd`|`groupadd`|
+|**削除する** `-del`|`userdel`|`groupadd`|
+|**編集する** `-mod`|`usermod`|`groupmod`|
+
+## 
+|||`g-`/`gr-`|
+|---|---|---|
+|`passwd`|`passwd`|`gpasswd`|
+|`pwck`|`pwck`|`gpwcd`|
+|`passwd`|`passwd`|`gpasswd`|
