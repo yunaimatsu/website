@@ -1,6 +1,5 @@
 # Yoshi's website
 
-**A brief description of your website.**  
 This repository contains the source code for my personal {portfolio, blog} website showcasing my projects, skills, knowledge.
 
 ---
