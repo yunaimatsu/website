@@ -1,7 +1,8 @@
 ---
 layout: '@layout/Layout.astro'
+title: 'About'
 ---
-<Layout title="About">
+<Layout>
 	<h1>About</h1>
 </Layout>
 
