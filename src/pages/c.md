@@ -1,9 +1,11 @@
 ---
 layout: '@layout/Layout.astro'
+title: 'Contact'
 ---
-<Layout title="Contact">
+<Layout>
 	<h1>Contact</h1>
 </Layout>
+
 **Way**
 
 Google form
