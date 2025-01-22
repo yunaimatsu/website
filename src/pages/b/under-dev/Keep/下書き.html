@@ -1,0 +1,289 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>&#19979;&#26360;&#12365;</title>
+<style type="text/css">
+         body {
+  font-family: 'Roboto Condensed','Droid Sans',arial,sans-serif;
+  font-size: 15px;
+  color: rgba(0,0,0,0.8);
+  word-wrap: break-word;
+  background-color: #e8e8e8;
+}
+
+hr {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-style: inset dashed;
+    border-width: 1px;
+}
+
+.note {
+  outline: none;
+  box-shadow: 0 2px 1px rgba(0,0,0,0.08);
+  box-sizing: border-box;
+
+  max-width: 600px;
+  min-width: 240px;
+  margin: 20px;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.note .heading {
+  font-size: 12px;
+  padding: 15px 15px 0 15px;
+  color: rgba(100,100,100,0.8);
+}
+
+.note .title {
+  font-size: 17px;
+  font-weight: bold;
+  padding: 15px 15px 0 15px;
+  min-height: 28px;
+}
+
+.note .content {
+  padding: 12px 15px 15px 15px;
+  font-family: 'Roboto Slab','Times New Roman',serif;
+  font-size: 14px;
+}
+
+.note .attachments {
+  padding: 0 15px 15px 15px;
+}
+
+.attachments ul {
+  padding: 0;
+  margin: 0;
+}
+
+.attachments li {
+  list-style-type: none;
+  margin-top: 12px;
+}
+
+.attachments li img {
+  max-width: 100%;
+}
+
+.attachments .audio {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4KPCFET0NUWVBFIHN2ZyAgUFVCTElDICctLy9XM0MvL0RURCBTVkcgMS4xLy9FTicgICdodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQnPgo8c3ZnIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHZpZXdCb3g9IjAgMCAyMCAyMCIgdmVyc2lvbj0iMS4xIiB5PSIwcHgiIHg9IjBweCIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIj4KPHBhdGggZD0ibTEgN3Y2aDRsNSA1di0xNmwtNSA1aC00em0xMy41IDNjMC0xLjgtMS0zLjMtMi41LTR2OGMxLjUtMC43IDIuNS0yLjIgMi41LTR6bS0yLjUtOC44djIuMWMyLjkgMC45IDUgMy41IDUgNi43cy0yLjEgNS44LTUgNi43djIuMWM0LTAuOSA3LTQuNSA3LTguOHMtMy03LjktNy04Ljh6Ii8+Cjwvc3ZnPgo=);
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.note .list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.note .listitem {
+}
+
+.note .listitem .bullet {
+  position: absolute;
+}
+
+.note .listitem .text {
+  margin-left: 20px;
+}
+
+.note .identifier {
+  color: rgba(0, 0, 0, 0.5);
+}
+.note .identifier:before {
+  content: "(";
+}
+.note .identifier:after {
+  content: ")";
+}
+
+/* Only show identifiers when the element is hovered. */
+.note .listitem .identifier,
+.note .chip .identifier {
+  display: none;
+}
+
+.note .listitem:hover .identifier,
+.note .chip:hover .identifier {
+  display: inline;
+}
+
+.note .chips {
+  padding: 12px 15px 15px 15px;
+}
+
+.note .chip {
+  display: inline-block;
+  max-width: 198px;
+  margin: 2px 4px 2px 0;
+  padding: 2px 5px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 11px;
+  font-family: 'Roboto','Droid Sans',arial,sans-serif;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.note .chip a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.chip-icon {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-size: 100%;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.annotation.CALENDAR .chip-icon {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzAwMDAwMCI+CiAgICA8cGF0aCBkPSJNMTcgMTJoLTV2NWg1di01ek0xNiAxdjJIOFYxSDZ2Mkg1Yy0xLjExIDAtMS45OS45LTEuOTkgMkwzIDE5YzAgMS4xLjg5IDIgMiAyaDE0YzEuMSAwIDItLjkgMi0yVjVjMC0xLjEtLjktMi0yLTJoLTFWMWgtMnptMyAxOEg1VjhoMTR2MTF6Ii8+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+Cjwvc3ZnPgo=);
+}
+
+.annotation.DOCS .chip-icon {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzAwMDAwMCI+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+CiAgICA8cGF0aCBkPSJNMTkgM0g1Yy0xLjEgMC0yIC45LTIgMnYxNGMwIDEuMS45IDIgMiAyaDE0YzEuMSAwIDItLjkgMi0yVjVjMC0xLjEtLjktMi0yLTJ6bS0xLjk5IDZIN1Y3aDEwLjAxdjJ6bTAgNEg3di0yaDEwLjAxdjJ6bS0zIDRIN3YtMmg3LjAxdjJ6Ii8+Cjwvc3ZnPgo=);
+}
+
+.annotation.GMAIL .chip-icon {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzAwMDAwMCI+CiAgICA8cGF0aCBmaWxsPSJub25lIiBkPSJNLTYxOC0yMTA0SDc4MnYzNjAwSC02MTh6TTAgMGgyNHYyNEgweiIvPgogICAgPHBhdGggZD0iTTIwIDRINGMtMS4xIDAtMiAuOS0yIDJ2MTJjMCAxLjEuOSAyIDIgMmgxNmMxLjEgMCAyLS45IDItMlY2YzAtMS4xLS45LTItMi0yem0wIDE0aC0yVjkuMkwxMiAxMyA2IDkuMlYxOEg0VjZoMS4ybDYuOCA0LjJMMTguOCA2SDIwdjEyeiIvPgo8L3N2Zz4K);
+}
+
+.annotation.SHEETS .chip-icon {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzAwMDAwMCI+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+CiAgICA8cGF0aCBkPSJNMTkgM0g1Yy0xLjEgMC0xLjk5LjktMS45OSAyTDMgOHYxMWMwIDEuMS45IDIgMiAyaDE0YzEuMSAwIDItLjkgMi0yVjVjMC0xLjEtLjktMi0yLTJ6bTAgOGgtOHY4SDl2LThINVY5aDRWNWgydjRoOHYyeiIvPgo8L3N2Zz4K);
+}
+
+.annotation.SLIDES .chip-icon {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbD0iIzAwMDAwMCI+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+CiAgICA8cGF0aCBkPSJNMTkgM0g1Yy0xLjEgMC0xLjk5LjktMS45OSAydjE0YzAgMS4xLjg5IDIgMS45OSAyaDE0YzEuMSAwIDItLjkgMi0yVjVjMC0xLjEtLjktMi0yLTJ6bTAgMTNINVY4aDE0djh6Ii8+Cjwvc3ZnPgo=);
+}
+
+.annotation.WEBLINK .chip-icon {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzAwMDAwMCI+CiAgICA8cGF0aCBkPSJNMTkgNEg1Yy0xLjExIDAtMiAuOS0yIDJ2MTJjMCAxLjEuODkgMiAyIDJoMTRjMS4xIDAgMi0uOSAyLTJWNmMwLTEuMS0uODktMi0yLTJ6bTAgMTRINVY4aDE0djEweiIvPgogICAgPHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPgo8L3N2Zz4K);
+}
+
+.sharees h2 {
+  display: none;
+}
+
+.sharees ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 15px 15px 15px;
+}
+
+.sharees li {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzAwMDAwMCI+CiAgICA8cGF0aCBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptMCAzYzEuNjYgMCAzIDEuMzQgMyAzcy0xLjM0IDMtMyAzLTMtMS4zNC0zLTMgMS4zNC0zIDMtM3ptMCAxNC4yYy0yLjUgMC00LjcxLTEuMjgtNi0zLjIyLjAzLTEuOTkgNC0zLjA4IDYtMy4wOCAxLjk5IDAgNS45NyAxLjA5IDYgMy4wOC0xLjI5IDEuOTQtMy41IDMuMjItNiAzLjIyeiIvPgogICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPgo8L3N2Zz4K);
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sharees li.group {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzAwMDAwMCI+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+CiAgICA8cGF0aCBkPSJNMTYgMTFjMS42NiAwIDIuOTktMS4zNCAyLjk5LTNTMTcuNjYgNSAxNiA1Yy0xLjY2IDAtMyAxLjM0LTMgM3MxLjM0IDMgMyAzem0tOCAwYzEuNjYgMCAyLjk5LTEuMzQgMi45OS0zUzkuNjYgNSA4IDVDNi4zNCA1IDUgNi4zNCA1IDhzMS4zNCAzIDMgM3ptMCAyYy0yLjMzIDAtNyAxLjE3LTcgMy41VjE5aDE0di0yLjVjMC0yLjMzLTQuNjctMy41LTctMy41em04IDBjLS4yOSAwLS42Mi4wMi0uOTcuMDUgMS4xNi44NCAxLjk3IDEuOTcgMS45NyAzLjQ1VjE5aDZ2LTIuNWMwLTIuMzMtNC42Ny0zLjUtNy0zLjV6Ii8+Cjwvc3ZnPgo=);
+}
+
+.note .meta-icons {
+  float: right;
+}
+
+.note .meta-icons span {
+  display: inline-block;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 22px;
+  height: 22px;
+  padding-left: 4px;
+}
+
+.meta-icons .pinned {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMHB4IiBoZWlnaHQ9IjIwcHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzQyODVmNCI+DQogICAgPHBhdGggZD0iTTE2IDVoLjk5TDE3IDNIN3YyaDF2N2wtMiAydjJoNXY2bDEgMSAxLTF2LTZoNXYtMmwtMi0yVjV6Ii8+DQogICAgPHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPg0KPC9zdmc+);
+}
+
+.meta-icons .archived {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4KPCFET0NUWVBFIHN2ZyAgUFVCTElDICctLy9XM0MvL0RURCBTVkcgMS4xLy9FTicgICdodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQnPgo8c3ZnIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHZpZXdCb3g9IjAgMCAxOCAxOCIgdmVyc2lvbj0iMS4xIiB5PSIwcHgiIHg9IjBweCIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE4IDE4Ij4KPHBhdGggZD0ibTE2LjYgM2wtMS4yLTEuNWMtMC4yLTAuMy0wLjYtMC41LTEtMC41aC0xMC43Yy0wLjQgMC0wLjggMC4yLTEgMC41bC0xLjMgMS41Yy0wLjIgMC4zLTAuNCAwLjctMC40IDEuMXYxMS4xYzAgMSAwLjggMS44IDEuOCAxLjhoMTIuNGMxIDAgMS44LTAuOCAxLjgtMS44di0xMS4xYzAtMC40LTAuMi0wLjgtMC40LTEuMXptLTcuNiAxMC45bC00LjktNC45aDMuMXYtMS44aDMuNnYxLjhoMy4xbC00LjkgNC45em0tNi4xLTExLjFsMC43LTAuOWgxMC43bDAuOCAwLjloLTEyLjJ6Ii8+Cjwvc3ZnPgo=);
+}
+
+.meta-icons .trashed {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjE4cHgiIHdpZHRoPSIxOHB4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0iIzAwMDAwMCI+DQogPHBhdGggZD0ibTEyIDM4YzAgMi4yMSAxLjc5IDQgNCA0aDE2YzIuMjEgMCA0LTEuNzkgNC00di0yNGgtMjR2MjR6bTI2LTMwaC03bC0yLTJoLTEwbC0yIDJoLTd2NGgyOHYtNHoiLz4NCiA8cGF0aCBkPSJtMCAwaDQ4djQ4aC00OHoiIGZpbGw9Im5vbmUiLz4NCjwvc3ZnPg==);
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+.RED {
+  background-color: rgb(255, 109, 63) !important;
+}
+.ORANGE {
+  background-color: rgb(255, 155, 0) !important;
+}
+.YELLOW {
+  background-color: rgb(255, 218, 0) !important;
+}
+.GREEN {
+  background-color: rgb(149, 214, 65) !important;
+}
+.TEAL {
+  background-color: rgb(28, 232, 181) !important;
+}
+.BLUE {
+  background-color: rgb(63, 195, 255) !important;
+}
+.GRAY {
+  background-color: rgb(184, 196, 201) !important;
+}
+
+/* go/keep-more-colors-eng */
+.CERULEAN {
+  background-color: rgb(130, 177, 255) !important;
+}
+.PURPLE {
+  background-color: rgb(179, 136, 255) !important;
+}
+.PINK {
+  background-color: rgb(248, 187, 208) !important;
+}
+.BROWN {
+  background-color: rgb(215, 204, 200) !important;
+}
+
+      </style></head>
+<body><div class="note BLUE"><div class="heading"><div class="meta-icons">
+
+</div>
+2022/07/26 20:04:01</div>
+<div class="title">&#19979;&#26360;&#12365;</div>
+<div class="content">6専門外ですが、ケマルの政教分離政策により現代トルコ語にはアラビア語由来の語彙や文字がありません。現代のジェンダー問題に関する文字狩りに似てると思っています。本質的には、古典も含めてより多くの表現を学んだ上で、状況に応じて適切に使えるようにしておくのが重要だと信じています。<br>既出<br><br>あるDJ「同じ英語の曲でも、ジャマイカと日本では盛り上がる曲・タイミングが違う。向こうの人は歌詞の中身も含めて盛り上がるが、日本人は好きな旋律で盛り上がる。私はそれに気をつけている。」僕が好きなJ-popを外国人に勧めても気にいるとは限らない。僕も、海外の軍歌等も意味が分からずとも言語の響きが好きだったりする。<br><br>popより国家,軍歌,愛国歌,民族音楽,先住民音楽などを聴くという奇癖が僕にはあるのですが、意味は分からずとも響きが好きだという理由で好きになる曲が多いです。さらに、そこからその言語に何となく興味がわいたりすることもしばしばあります。外国語学習のきっかけは自分の好きなことであるのが理想ですよね～<br><br>言語学習は様々な学術分野に関係が深い。文学や古典は歴史言語学の研究対象であるので言うまでもない。数式や音楽記号、プログラミングはある側面を切り取れば言語活動に他ならない。また、言語学では一種の論理学、解剖学、音響学、統計を扱う。特に線形性などをは数学を使った類推で理解することがある。<br><br>言語学は様々な学術分野に関係が深い。文学や古典は歴史言語学の研究対象であるので言うまでもない。数式や音楽記号、プログラミングはある側面を切り取れば言語活動に他ならない。また、言語学では一種の数学、論理学、音響学、統計を扱う。特に線形性などをは数学を使った類推で理解することがある。<br><br>語学に正解は無いと思うが、「スぺ語ロシア語初心者」としてスラブ語派・ラテン語派(特にスぺ語とイタリア語)を初歩から並行するのはお勧めしない。片方が堪能だともう一方を「外国語」または「方言」としてはっきり分けて学べる(本来言語に「境界」などないのだが)。しかし、僕はある時モンゴル語を覗くとキリル文字でも発音が微妙に違い、またある時イタリア語を嚙ると代名詞がスペ語より複雑で混乱した。語学は、単に文字の同一や、系統の近さで選べばいい訳でもないようだ。我ながらスペ語とロシア語はお互いの距離が絶妙で、かなり優秀なコンビだと思う。<br><br>そもそも言語自体には「境界」を作ることは不可能なのだ。例えば沖縄弁と標準語(江戸弁と呼びたい)は便宜上同じ日本語だとされるが、Wikiの文献(出典から、一定の信憑性があると思われる記事)<br><br>良くYouTubeで、外国人とオンラインで話して下に字幕つけた動画をアップする方々がいる。本当に個人的なド偏見だが、外国人と話が通じている自分に酔いたいという側面が少しは絶対ある<br><br><br><br>梅田スカイビルへ訪問。空中庭園の入り口には種々の言語で各々の名文が書かれていた。また、展望台には世界各地の構想建築が紹介されており、どれも興味深かった。人類は昔から高い所が好きだったようだ。またそれは庶民が見上げて畏れを覚え、権力者は上から俯瞰して支配欲を強めたのだろう。あるいは信仰の対象・宗教的建築が高層なのは天に近かったり登った際に非日常感があって神聖さを感じるからなのかもしれない。実際、山岳信仰はどの宗教でも行われている。<br><br>梅田スカイビル。展望台に世界各地の高層建築の紹介。人類は昔から高い所が好きだったようだ。庶民は見上げて畏れを覚え、権力者は見下ろして満足しただろう。天への近さ、登った際の非日常感による神聖さからか、宗教建造物も高層なものが多く、山岳信仰はどの宗教にもある。(一部画像ネットより)<br><br>梅田スカイビルに行った際、建築へ強烈な興味を抱いた。文系の要素が多いし。<br><br>【警告】ロシア語を学ぶ人々へ<br>我々ロシア語学徒はキリル文字を扱えることに一定の誇りを感じているが、モンゴルは同じキリル文字でも発音が異なる。新しい文字まで追加されている。ウクライナ語にも文字が追加されている。だから文字が同じだからと言ってなめてかかってはいけない。むしろ文字を全く知らない系統の言語をやったほうが知識の幅も広がるし混乱もしないしお勧め。<br><br>言語学的根拠はないが、ふと考えたのは、「助動詞＋原型」はインドヨーロッパ語族の共通点なのではないか。can do may do <br><br>ロシア語を今学んでることに特に政治的意味はありません。受験の際、大阪に『ゼロからスタートロシア語』を持って行き楽しみにしていました。しかし前日(2/24)爆撃が起きて、人目が憚られ帰りの新幹線で何もできなかった悲しい記憶がその証拠です。<br><br>YouTubeのコメントに「日本語のラップってダサくね？」とあった。恐らくUSラップを聴いたあとに日本語を聴いたらクドく感じたのだろう。外国語は中身が何でも格好良く聴こえる。そして語学を進めていく中で、外国語として日本語を聴いてみると何とも不思議な気持ちになることもある。<br><br>YouTubeのコメに「日本語ラップってダサくね？」とあった。USラップを聴いたあとに日本語を聴いたらクドく感じたのだろう。外国語は中身が何でも格好良く聴こえる。それは学習が進んでも変わらない気がする。逆に外国語として日本語を聴くと不思議な気持ちになることがある。<br><br>YouTubeのコメに「日本語ラップってダサくね？」とあった。USラップを聴いた後に日本語を聴いたらクドく感じたのなら、それは少し共感する。外国語は中身が何であろうと格好良く聴こえる。それは学習が進んでも変わらない気がする。世界では昔から多くの文人が母語を捨てる様にある言語に熱中しているのはそんな魅力も少なからず影響しているだろう。<br><br>「韻」について。HIPHOPだけでなくpopでも語尾を揃えることは多い<br><br>情けないが衝動的にブックオフで改訂前のポーランド語のニューエクを購入した。単語や例文は飛ばして文法の説明だけ一通り読んだので感想を聞いてほしい。ただし、あくまで感想なので学術的に正しいかはわからない。<br>まず、ラテン文字を使用することにとどまらず、様々な面でイタリック・ゲルマン語派との共通性を感じる。再帰動詞を持つこと。<br><br>何事においても、境界では特殊なものができる。イベリア、ポーランド、トルコ、東南アジアも大きな文明世界の境目で複雑な歴史を歩み、複数の巨大文化が融合・昇華した優秀な文化が育まれた。<br><br>口からはホイホイ「多様性」やら「SDGs」やら出てくるが、自分に都合が悪かったり皆が嫌ったりしている者を排除したり、世間で「危険思想」とラベルを貼られた哲学をネタ扱いしたり、ネットで<br>以下は個人的な感想だが、今回のウクライナ騒動でウクライナを支援する、や戦争反対、と自ら主張する人間たちは単に群衆心理でしか動けない羊のごとく惨めであるように思われて仕方がない。戦争反対という割に一応【反戦】の文字をパンフレットに印刷している日本共産党の意見に耳を傾けようともしない。<br><br>概して近現代は、イデオロギーや哲学が、何かしらのものを改善する目的を示す理念から、自分を集団から浮かせないため、あるいは論争相手を打ち倒すための手段となり下がっている。<br>このような側面があるのではないだろうか。<br><br>これは語学の話だから尚更だが、このような復讐系のストーリーは敵・味方の二元化があって本当に嫌い。よく社会全体の多様性を極端に進めると個人が<br><br><br>よりによってロシア語なのに初手からめっちゃ赤で草<br><br>こんにちは、スロ初です。<br><br>英検一級のリーディング、時間きつくありませんか？<br><br>自分も最後の最後まで試行錯誤しました。<br><br>結論としては、<br><br>①形式慣れすること<br><br>②本質的に読むスピードを上げること<br><br>の二つに労力を割きます。<br><br>勿論、単語を直前まで確認し続けてください。<br><br><br><br><br>①形式慣れについて<br><br>僕は当時、資格試験で力を測ることに対して反感がありました。証明されなくたって実際使えたら良いと思っていました。しかし気づいたのは、英検一級を受ける前の自分が思う「本質的」と英検主催者・作問者といったハイレベルな人が思う「本質的」は違うということでした。つまり、英検実施団体の人が最善だとして行っている形式に完全に馴致されることは自分をそのレベルになるように少しづつではあるが近づけてくれることだとまたあるいは、自分の実力を証明するために必要なステップだと考えました。<br><br>つまり、形式慣れは「してからがスタート」だということです。<br><br>そう考えることにしてからは何の迷いもなくギリギリまで時間配分を吟味していました。く<br><br><br>語学に於ける聖書を読むメリット<br><br>ヘブライ語、アラム語、コイネー(古代、ギリシアとも違う)、ラテン語を学んだあとのじっさの文章を読む素材<br>原典を読めるということでモチベも上がる<br>語源<br>信仰を理解<br>歴史<br>常識<br><br>考えたこと<br>音楽は、音自体で評価されることはない。聞く者の知識や状況、音楽のルーツやそれの基盤となる共同体を前提に聞かれ、評価される。そして、入試でもあったが、他人の評価にかなり好きな曲も左右される。<br>あとは<br><br>今日の総長の話、すごいよかった。<br>沈黙の春よもーと<br>神秘的な感じめっちゃわかる。これでええんやな。仏法に感謝。<br><br>京都古本屋巡り。語学たん応援たん様を見習ってモリモリ積読してしまった。積読の正当性については長くなるのでここでは書かないが、言語系・音楽系の本を多く積んだ。<br>音楽は、音が単体で評価されることはない。<br>必ず、<br>例えば、スペイン国歌はメロディー単体で<br><br>キリル文字VSラテン文字は、単純化すれば正教会VSカトリックでもある。特に、セルビア語とクロアチア語はかなり似た言語だが、それぞれキリル、ラテンである。<br><br>トルコ語を<br><br>https://mobile.twitter.com/khaltoskiiv/status/1517443093296861185<br><br>もっと「面白い」情報を優先すべきだった…<br><br>良書。構成が非常に整然としていて、ハイレベルな事まで扱うが詰まらず読める。また、日本語との共通点に驚く。更に、他言語でもよく出る文法用語の一般的な意味も解説されており、本業の言語にもプラスになること間違いなし。<br><br>スワヒリ語<br>温かい<br>少しでも会わないと必ずその間の事を聞き、返事はいつでもSalama(平和)、Safi/Nzuri(良い)。<br>それも、手を繋いだままする。<br><br>デンマーク語の発音はモゴモゴしており、ネイティブの会話でも常に「なんて？」が飛び交うらしい。まして我々には理解不可能だろう。しかしよく考えると、我々はたとえ日本語でも気持ちを100%伝えるのは難しい。語学、そしてコミュニケーションにおいては完璧主義を考え直してみたい。<br><br>「暗記でなく理解が重要だ」と叫ばれるようになってから久しい。語学も気合で暗記する物が多いのは事実だ。しかしその暗記にも何かしらの語呂やストーリー化といった「こじつけ」でその量を減らすことができる。<br><br>これは自分自身で試行錯誤するのが一番効率が良い。語呂やストーリー化はしばしばそれを作った人が最も覚えやすい。自分がスペイン語99活用を<br><br><br>【スペ語の動詞の活用全てマスターする動画】スぺ語の動詞には102個の活用がある。どの勉強でもそうだが、ストーリー化して学術的背景と一緒に学べば、暗記の量を最小限にすることができる。活用を制する者はスぺ語を制す！<br><br>また、全くの異世界の様に思ってた文化圏が、自分達の生活とさして変わらないことに気付けるし、何よりもある文化に“直接”触れられるようになること。<br><br>沢山の言語をかじっていると、「あの言語でいう所のアレだ！」という体験があり理解が深まることがよくある。最近では、タイ語と朝鮮語の発音システムが激似で面白かった。<br><br>この度、大阪大学で言語サークル(仮)を結成しました。皆で一つ難解な言語を学んだり、自分が調べた言語についてシェアしたり、大阪にいる外国人と語学をテーマに交流したりします。何か<br><br>英語専攻の友人が「マイナー言語専攻してる奴の気が知れない」らしい。外国で就職するとかでもない限り、たとえ英語だって一日に一回つかうかどうかだ。<br>好きな事を仕事にする<br><br>いつ死んでも良い様に楽しんで生きるというけど、明日死んでも良い様に生きようとすると結局死について考えながら楽しむことになる。<br><br>結局語学をやる理由は、楽しいから、でしかないのではないか。<br><br>海外旅行をする機会など限られているし<br><br>ヨーロッパ系の言語をかじっていると、発音がわけわからなくなる<br><br>複数の言語を並行すると混乱すると言われる。確かに話す時は少し頭に負担を感じる。でも語源など共通点を見つけたら面白くて頭に残るし、気分転換にもなる。何より、マルチリンガルになるには切り替えができなければならない。努力せねば…<br><br> 母国語が進歩する ...<br>2.<br>集中力が高まる ...<br>3.<br>よくある脳の病気を予防する ...<br>4.<br>数学のスキルが向上する ...<br>5.<br>5. あらゆる学習が速くなる ...<br>6.<br>6. 外交的になり人に好かれるようになる ...<br>7.<br>7. 創造性が倍になる ...<br>8.<br>自信が高まる<br><br>コミュニケーションでは、非言語コミュニケーションが97%を占めるという「メラビアンの法則」がある。そしてそれは語学系の様々な勉強法や商材の広告の根拠として使われる。<br>しかし、落ち着いて論文を読めば、それらはあくまで「本当は何が言いたいか」の伝達言語学習はどちらにせよ重要である。<br><br><br>言語ごとに、略語の音節数が決まっているらしい。<br>日本語は3。ﾏｸﾄﾞ/ﾐｽﾄﾞなど。<br>スペ語は2。Paco/Toniのあだ名も含め、motoやfotoなど。<br><br>スペ語は略語以外も2音節単語は多く、いつも似た単語を混同してしまう。<br><br>スラブ諸語は昔一つの言語でした。つい千年程前に分化し始めたばかりなので、同語派内で相互理解できる割合が他より圧倒的に大きいです。文字化すればほぼ完全に分かると言う人もいます。ロシア語は格変化の規則性が強く、話者が多く、国連公用語でもあるのでスラブ語派言語の初めには最適です。<br><br>「時制と活用を制する者はスペ語を制す」と何かのブログでみました。その通りだと思います。<br><br>【無料・良質な語学ツール】<br>東外大言語モジュール<br>http://www.coelang.tufs.ac.jp/mt/<br><br>阪大外語言語独習ツール<br>http://el.minoh.osaka-u.ac.jp/flc/<br><br>この2つで、重複なしで33言語を学べる<br><br>Language Reactor<br>NetflixやYouTubeで、動画で使われる言語とその訳の字幕を付けれる。訳を学習中の言語にすれば速読力・語彙力がつく。それも、ネイティブが使うリアルな表現を、映像と合わせて簡単に覚えられる。<br>https://www.languagereactor.com/<br><br>学べる言語<br>英語h<br>ドイツ語h<br>ポーランド語<br>フランス語h<br>イタリア語h<br><br>スペイン語h<br>ポルトガル語h<br>ロシア語h<br>モンゴル語h<br>中国語h<br><br>朝鮮語h<br>インドネシア語h<br>マレーシア語<br>フィリピノ語<br>タイ語h<br><br>ラオス語<br>ベトナム語h<br>カンボジア語<br>ビルマ語h<br>ウルドゥー語h<br><br>ヒンディー語h<br>ベンガル語<br>アラビア語h<br>ペルシア語h<br>トルコ語h<br><br>日本語h<br><br>阪大にしかない言語<br><br>ウイグル語<br>スウェーデン語<br>デンマーク語<br>スワヒリ語<br><br>ハンガリー語<br>ヨルバ語<br>マラーティー語<br><br>33言語の良質な言語学習が無料で使える時代…<br><br>1しかつかんかった…<br>暗記の負担激減！<br>🇯🇵音読み<br>🇰🇷終声<br>🇨🇳併音<br>の関係！<br><br>🇯🇵ｲ,ｳで終わる→🇰🇷ㅇ🇨🇳-ng<br>(中央ﾁｭｳｵｳ→🇰🇷중앙🇨🇳zhōngyāng)<br><br>🇯🇵ﾝで終わる→🇰🇷ㅁ/ㄴ🇨🇳-n<br>(前進ｾﾞﾝｼﾝ→🇰🇷전진🇨🇳qiánjìn)<br><br>🇯🇵ﾁ,ﾂで終わる→🇰🇷ㄹ<br>(週末ｼｭｳﾏﾂ→🇰🇷주말)<br><br>🇯🇵ｷ/ｸで終わる→🇰🇷ㄱ<br>(格式ｶｸｼｷ→🇰🇷격식)<br><br>東外大言語モジュール<br>http://coelang.tufs.ac.jp/mt/<br>阪大外語言語独習ツール<br>http://el.minoh.osaka-u.ac.jp/flc/<br>↑併用すれば33言語を学べる<br><br>Language Reactor<br>https://languagereactor.com<br>↑NetflixやYouTubeで、動画の言語とその訳を表示。記憶に残りやすい。訳を学習中の言語にするのもオススメ。<br><br>全て完全無料。<br><br>この2つ、なんで伸びんかったんやろ<br><br>【多すぎ】ラテン語🇻🇦学ぶ意義<br><br>・諸言語で大切な文法概念を網羅できる<br>・文法表の丸暗記に慣れる<br>・ロマンス諸語をリアルに10倍速で習得できるようになる<br>・幅広い分野の文献へのアクセスできる<br><br>今年の夏はラテン語をやってみませんか。ラテン語文法を1時間に纏めた動画を現在作ってます。乞うご期待<br><br>全ラテン語派オタク必読。著者は『言語世界地図』でも有名な町田健氏。<br><br>ラテン語<br>俗ラテン語<br>11の現代ロマンス諸語<br><br>の音韻・文法・その文化圏の様々な情報を掲載。言語間の対応やロマンス諸語全体に通じる特徴を、わずか194ページで学べる。充実して且つ面白い、至れり尽くせりの最強の1冊。<br><br><br>河野玄斗さんが難しい資格を取りまくる企画【最強の履歴書を作ろう】をやっている。僕が色んな言語の「○○政府公認」試験の最上位級を取りまくったら、【2番目に強い履歴書を作ろう】として成り立つだろうか。むしろそのほうが世界水準なので「最強」ではないか。<br><br>大雑把で注意散漫な人こそ語学が向いてる気がする。「スペ語の活用102個もあるの面白そう!!」といきなり動詞から入ったりする人の方が長続きしていいと思う。最終的には楽しいものに時間を投下するようになるものなので…<br><br>英検1級パス単の次は…<br><br>①『究極の英単語プレミアム1&amp;2』<br>・春休み挫折しました<br><br>②『oxford pocket dictionary』<br>・本当にポケットに入ります<br>・C2レベルより上の単語はのってません<br>・ここにない単語は覚えない、という基準としても使えます<br><br>③ひたすら未知語をストック<br>・5個ずつ分けると見やすい<br><br>dele, ieltsで完全な成績収める<br>→ノート公開<br>はっきり言って、「しんどいけど頑張った」みたいなことは全くありません。ただやりたくてやっただけです。<br><br>少し前からアラビア語をしてます<br><br>文字と文法は何とか一通り終えましたが、単語が覚えれません<br><br>文字を音に直すのに時間がかかるし、何よりヨーロッパから離れるので、似てて分かる単語が殆どないです<br><br>スペ語単語と似てると聞いていましたが、まだスペ語らしきものにで出会えてません…<br><br>#アラビア語<br>Traducir Tweet<br>6:12 p. m. · 26 jul. </div>
+<div class="chips"><span class="chip annotation WEBLINK"><a title="&ldquo;&#20693;&#12398;&#21476;&#12488;&#12523;&#12467;&#35486;&#12398;&#24107;&#12391;&#12354;&#12427;&#26494;&#20117;&#22826;&#25945;&#25480;&#12399;&#12289;&#26085;&#26412;&ldquo;&#21807;&#19968;&rdquo;&#12398;&#21476;&#12488;&#12523;&#12467;&#35486;&#25991;&#29486;&#30740;&#31350;&#32773;&#12290;&#12488;&#12523;&#12467;&#35576;&#35486;&#12399;&#12289;&#12518;&#12540;&#12521;&#12471;&#12450;&#20840;&#22495;&#12395;&#24195;&#12367;&#20998;&#24067;&#12377;&#12427;&#21106;&#12395;&#35328;&#35486;&#21516;&#22763;&#12364;&#38750;&#24120;&#12395;&#20284;&#12390;&#12362;&#12426;&#12289;&#25991;&#27861;&#12399;&#26085;&#26412;&#35486;&#12395;&#20284;&#12390;&#12356;&#12427;&#12290;&#12381;&#12398;&#36215;&#28304;&#12391;&#12354;&#12427;&#21476;&#12488;&#12523;&#12467;&#35486;&#12434;&#23398;&#12409;&#12400;&#12289;&#22320;&#29699;&#19978;&#12391;&#35328;&#33865;&#12364;&#36890;&#12376;&#12427;&#38754;&#31309;&#12434;&#25163;&#36605;&#12395;&#25313;&#22823;&#12391;&#12365;&#12427;&#12290;&#26494;&#20117;&#25945;&#25480;&#12289;&#24066;&#36009;&#25945;&#26448;&#20986;&#12375;&#12390;&#12367;&#12384;&#12373;&#12356;&#12290;&rdquo;" href="https://mobile.twitter.com/khaltoskiiv/status/1517443093296861185"><span class="chip-icon"></span>
+<span class="annotation-text">&#12473;&#12506;&#35486;&#12525;&#12471;&#12450;&#35486;&#21021;&#24515;&#32773;&#12383;&#12435; on Twitter</span></a>
+</span> <span class="chip annotation WEBLINK"><a title="" href="http://www.coelang.tufs.ac.jp//mt/"><span class="chip-icon"></span>
+<span class="annotation-text">&#26481;&#22806;&#22823;&#35328;&#35486;&#12514;&#12472;&#12517;&#12540;&#12523;</span></a>
+</span> <span class="chip annotation WEBLINK"><a title="Language Reactor: your language learning toolbox. Discover, understand, and learn from native materials, including Netflix and YouTube. (Formerly called &#39;Language Learning with Netflix&#39;.)" href="https://www.languagereactor.com/"><span class="chip-icon"></span>
+<span class="annotation-text">Language Reactor</span></a>
+</span> <span class="chip annotation WEBLINK"><a title="" href="http://www.coelang.tufs.ac.jp/mt/"><span class="chip-icon"></span>
+<span class="annotation-text">&#26481;&#22806;&#22823;&#35328;&#35486;&#12514;&#12472;&#12517;&#12540;&#12523;</span></a>
+</span> <span class="chip annotation WEBLINK"><a title="" href="http://el.minoh.osaka-u.ac.jp/flc/"><span class="chip-icon"></span>
+<span class="annotation-text">&#39640;&#24230;&#22806;&#22269;&#35486;&#25945;&#32946;&#29420;&#32722;&#12467;&#12531;&#12486;&#12531;&#12484;</span></a>
+</span>
+</div>
+<div class="attachments"><ul><li><img alt="" src="1656391708536.1928042641.png" /></li> <li><img alt="" src="1656391712215.441639461.png" /></li> <li><img alt="" src="1656391778620.75291171.png" /></li> <li><img alt="" src="17fdb5cd211.82f2e28b378073b7.jpg" /></li> <li><img alt="" src="17fe549cff5.8518ba68bd2d4a26.jpg" /></li> <li><img alt="" src="17fee647a40.bb1b8ece0d4e13ba.jpg" /></li> <li><img alt="" src="17fee64e6fd.ae8ad144a51e644c.jpg" /></li> <li><img alt="" src="17fee6ac861.83c07e805a76166d.jpg" /></li> <li><img alt="" src="a651eba9-0ea9-41bf-8129-b78ea5fd78e2.png" /></li></ul></div>
+</div></body></html>

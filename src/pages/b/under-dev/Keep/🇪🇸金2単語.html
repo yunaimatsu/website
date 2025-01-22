@@ -1,0 +1,278 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>&#55356;&#56810;&#55356;&#56824;&#37329;2&#21336;&#35486;</title>
+<style type="text/css">
+         body {
+  font-family: 'Roboto Condensed','Droid Sans',arial,sans-serif;
+  font-size: 15px;
+  color: rgba(0,0,0,0.8);
+  word-wrap: break-word;
+  background-color: #e8e8e8;
+}
+
+hr {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-style: inset dashed;
+    border-width: 1px;
+}
+
+.note {
+  outline: none;
+  box-shadow: 0 2px 1px rgba(0,0,0,0.08);
+  box-sizing: border-box;
+
+  max-width: 600px;
+  min-width: 240px;
+  margin: 20px;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.note .heading {
+  font-size: 12px;
+  padding: 15px 15px 0 15px;
+  color: rgba(100,100,100,0.8);
+}
+
+.note .title {
+  font-size: 17px;
+  font-weight: bold;
+  padding: 15px 15px 0 15px;
+  min-height: 28px;
+}
+
+.note .content {
+  padding: 12px 15px 15px 15px;
+  font-family: 'Roboto Slab','Times New Roman',serif;
+  font-size: 14px;
+}
+
+.note .attachments {
+  padding: 0 15px 15px 15px;
+}
+
+.attachments ul {
+  padding: 0;
+  margin: 0;
+}
+
+.attachments li {
+  list-style-type: none;
+  margin-top: 12px;
+}
+
+.attachments li img {
+  max-width: 100%;
+}
+
+.attachments .audio {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4KPCFET0NUWVBFIHN2ZyAgUFVCTElDICctLy9XM0MvL0RURCBTVkcgMS4xLy9FTicgICdodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQnPgo8c3ZnIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHZpZXdCb3g9IjAgMCAyMCAyMCIgdmVyc2lvbj0iMS4xIiB5PSIwcHgiIHg9IjBweCIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIj4KPHBhdGggZD0ibTEgN3Y2aDRsNSA1di0xNmwtNSA1aC00em0xMy41IDNjMC0xLjgtMS0zLjMtMi41LTR2OGMxLjUtMC43IDIuNS0yLjIgMi41LTR6bS0yLjUtOC44djIuMWMyLjkgMC45IDUgMy41IDUgNi43cy0yLjEgNS44LTUgNi43djIuMWM0LTAuOSA3LTQuNSA3LTguOHMtMy03LjktNy04Ljh6Ii8+Cjwvc3ZnPgo=);
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.note .list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.note .listitem {
+}
+
+.note .listitem .bullet {
+  position: absolute;
+}
+
+.note .listitem .text {
+  margin-left: 20px;
+}
+
+.note .identifier {
+  color: rgba(0, 0, 0, 0.5);
+}
+.note .identifier:before {
+  content: "(";
+}
+.note .identifier:after {
+  content: ")";
+}
+
+/* Only show identifiers when the element is hovered. */
+.note .listitem .identifier,
+.note .chip .identifier {
+  display: none;
+}
+
+.note .listitem:hover .identifier,
+.note .chip:hover .identifier {
+  display: inline;
+}
+
+.note .chips {
+  padding: 12px 15px 15px 15px;
+}
+
+.note .chip {
+  display: inline-block;
+  max-width: 198px;
+  margin: 2px 4px 2px 0;
+  padding: 2px 5px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 11px;
+  font-family: 'Roboto','Droid Sans',arial,sans-serif;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.note .chip a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.chip-icon {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-size: 100%;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.annotation.CALENDAR .chip-icon {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzAwMDAwMCI+CiAgICA8cGF0aCBkPSJNMTcgMTJoLTV2NWg1di01ek0xNiAxdjJIOFYxSDZ2Mkg1Yy0xLjExIDAtMS45OS45LTEuOTkgMkwzIDE5YzAgMS4xLjg5IDIgMiAyaDE0YzEuMSAwIDItLjkgMi0yVjVjMC0xLjEtLjktMi0yLTJoLTFWMWgtMnptMyAxOEg1VjhoMTR2MTF6Ii8+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+Cjwvc3ZnPgo=);
+}
+
+.annotation.DOCS .chip-icon {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzAwMDAwMCI+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+CiAgICA8cGF0aCBkPSJNMTkgM0g1Yy0xLjEgMC0yIC45LTIgMnYxNGMwIDEuMS45IDIgMiAyaDE0YzEuMSAwIDItLjkgMi0yVjVjMC0xLjEtLjktMi0yLTJ6bS0xLjk5IDZIN1Y3aDEwLjAxdjJ6bTAgNEg3di0yaDEwLjAxdjJ6bS0zIDRIN3YtMmg3LjAxdjJ6Ii8+Cjwvc3ZnPgo=);
+}
+
+.annotation.GMAIL .chip-icon {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzAwMDAwMCI+CiAgICA8cGF0aCBmaWxsPSJub25lIiBkPSJNLTYxOC0yMTA0SDc4MnYzNjAwSC02MTh6TTAgMGgyNHYyNEgweiIvPgogICAgPHBhdGggZD0iTTIwIDRINGMtMS4xIDAtMiAuOS0yIDJ2MTJjMCAxLjEuOSAyIDIgMmgxNmMxLjEgMCAyLS45IDItMlY2YzAtMS4xLS45LTItMi0yem0wIDE0aC0yVjkuMkwxMiAxMyA2IDkuMlYxOEg0VjZoMS4ybDYuOCA0LjJMMTguOCA2SDIwdjEyeiIvPgo8L3N2Zz4K);
+}
+
+.annotation.SHEETS .chip-icon {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzAwMDAwMCI+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+CiAgICA8cGF0aCBkPSJNMTkgM0g1Yy0xLjEgMC0xLjk5LjktMS45OSAyTDMgOHYxMWMwIDEuMS45IDIgMiAyaDE0YzEuMSAwIDItLjkgMi0yVjVjMC0xLjEtLjktMi0yLTJ6bTAgOGgtOHY4SDl2LThINVY5aDRWNWgydjRoOHYyeiIvPgo8L3N2Zz4K);
+}
+
+.annotation.SLIDES .chip-icon {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbD0iIzAwMDAwMCI+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+CiAgICA8cGF0aCBkPSJNMTkgM0g1Yy0xLjEgMC0xLjk5LjktMS45OSAydjE0YzAgMS4xLjg5IDIgMS45OSAyaDE0YzEuMSAwIDItLjkgMi0yVjVjMC0xLjEtLjktMi0yLTJ6bTAgMTNINVY4aDE0djh6Ii8+Cjwvc3ZnPgo=);
+}
+
+.annotation.WEBLINK .chip-icon {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzAwMDAwMCI+CiAgICA8cGF0aCBkPSJNMTkgNEg1Yy0xLjExIDAtMiAuOS0yIDJ2MTJjMCAxLjEuODkgMiAyIDJoMTRjMS4xIDAgMi0uOSAyLTJWNmMwLTEuMS0uODktMi0yLTJ6bTAgMTRINVY4aDE0djEweiIvPgogICAgPHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPgo8L3N2Zz4K);
+}
+
+.sharees h2 {
+  display: none;
+}
+
+.sharees ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 15px 15px 15px;
+}
+
+.sharees li {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzAwMDAwMCI+CiAgICA8cGF0aCBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptMCAzYzEuNjYgMCAzIDEuMzQgMyAzcy0xLjM0IDMtMyAzLTMtMS4zNC0zLTMgMS4zNC0zIDMtM3ptMCAxNC4yYy0yLjUgMC00LjcxLTEuMjgtNi0zLjIyLjAzLTEuOTkgNC0zLjA4IDYtMy4wOCAxLjk5IDAgNS45NyAxLjA5IDYgMy4wOC0xLjI5IDEuOTQtMy41IDMuMjItNiAzLjIyeiIvPgogICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPgo8L3N2Zz4K);
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sharees li.group {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzAwMDAwMCI+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+CiAgICA8cGF0aCBkPSJNMTYgMTFjMS42NiAwIDIuOTktMS4zNCAyLjk5LTNTMTcuNjYgNSAxNiA1Yy0xLjY2IDAtMyAxLjM0LTMgM3MxLjM0IDMgMyAzem0tOCAwYzEuNjYgMCAyLjk5LTEuMzQgMi45OS0zUzkuNjYgNSA4IDVDNi4zNCA1IDUgNi4zNCA1IDhzMS4zNCAzIDMgM3ptMCAyYy0yLjMzIDAtNyAxLjE3LTcgMy41VjE5aDE0di0yLjVjMC0yLjMzLTQuNjctMy41LTctMy41em04IDBjLS4yOSAwLS42Mi4wMi0uOTcuMDUgMS4xNi44NCAxLjk3IDEuOTcgMS45NyAzLjQ1VjE5aDZ2LTIuNWMwLTIuMzMtNC42Ny0zLjUtNy0zLjV6Ii8+Cjwvc3ZnPgo=);
+}
+
+.note .meta-icons {
+  float: right;
+}
+
+.note .meta-icons span {
+  display: inline-block;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 22px;
+  height: 22px;
+  padding-left: 4px;
+}
+
+.meta-icons .pinned {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMHB4IiBoZWlnaHQ9IjIwcHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzQyODVmNCI+DQogICAgPHBhdGggZD0iTTE2IDVoLjk5TDE3IDNIN3YyaDF2N2wtMiAydjJoNXY2bDEgMSAxLTF2LTZoNXYtMmwtMi0yVjV6Ii8+DQogICAgPHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPg0KPC9zdmc+);
+}
+
+.meta-icons .archived {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4KPCFET0NUWVBFIHN2ZyAgUFVCTElDICctLy9XM0MvL0RURCBTVkcgMS4xLy9FTicgICdodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQnPgo8c3ZnIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHZpZXdCb3g9IjAgMCAxOCAxOCIgdmVyc2lvbj0iMS4xIiB5PSIwcHgiIHg9IjBweCIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE4IDE4Ij4KPHBhdGggZD0ibTE2LjYgM2wtMS4yLTEuNWMtMC4yLTAuMy0wLjYtMC41LTEtMC41aC0xMC43Yy0wLjQgMC0wLjggMC4yLTEgMC41bC0xLjMgMS41Yy0wLjIgMC4zLTAuNCAwLjctMC40IDEuMXYxMS4xYzAgMSAwLjggMS44IDEuOCAxLjhoMTIuNGMxIDAgMS44LTAuOCAxLjgtMS44di0xMS4xYzAtMC40LTAuMi0wLjgtMC40LTEuMXptLTcuNiAxMC45bC00LjktNC45aDMuMXYtMS44aDMuNnYxLjhoMy4xbC00LjkgNC45em0tNi4xLTExLjFsMC43LTAuOWgxMC43bDAuOCAwLjloLTEyLjJ6Ii8+Cjwvc3ZnPgo=);
+}
+
+.meta-icons .trashed {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjE4cHgiIHdpZHRoPSIxOHB4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0iIzAwMDAwMCI+DQogPHBhdGggZD0ibTEyIDM4YzAgMi4yMSAxLjc5IDQgNCA0aDE2YzIuMjEgMCA0LTEuNzkgNC00di0yNGgtMjR2MjR6bTI2LTMwaC03bC0yLTJoLTEwbC0yIDJoLTd2NGgyOHYtNHoiLz4NCiA8cGF0aCBkPSJtMCAwaDQ4djQ4aC00OHoiIGZpbGw9Im5vbmUiLz4NCjwvc3ZnPg==);
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+.RED {
+  background-color: rgb(255, 109, 63) !important;
+}
+.ORANGE {
+  background-color: rgb(255, 155, 0) !important;
+}
+.YELLOW {
+  background-color: rgb(255, 218, 0) !important;
+}
+.GREEN {
+  background-color: rgb(149, 214, 65) !important;
+}
+.TEAL {
+  background-color: rgb(28, 232, 181) !important;
+}
+.BLUE {
+  background-color: rgb(63, 195, 255) !important;
+}
+.GRAY {
+  background-color: rgb(184, 196, 201) !important;
+}
+
+/* go/keep-more-colors-eng */
+.CERULEAN {
+  background-color: rgb(130, 177, 255) !important;
+}
+.PURPLE {
+  background-color: rgb(179, 136, 255) !important;
+}
+.PINK {
+  background-color: rgb(248, 187, 208) !important;
+}
+.BROWN {
+  background-color: rgb(215, 204, 200) !important;
+}
+
+      </style></head>
+<body><div class="note RED"><div class="heading"><div class="meta-icons">
+
+</div>
+2024/01/26 10:08:40</div>
+<div class="title">&#55356;&#56810;&#55356;&#56824;&#37329;2&#21336;&#35486;</div>
+<div class="content">【問題】の単語<br>もたれる<br>落ち着かせる<br>起き上がる、立つ a-<br>丘<br>白くする<br>精神<br>老人<br>周囲に<br><br>recostarse en sobre <br>aquietar<br>alzarse<br>loma<br>blanquear<br>ánimno<br>anciano/a<br>en derredor<br><br>野次馬<br>小売店<br>露店<br>水平線<br>城壁<br>半目の目<br>思考に耽った<br>虚空を見つめる<br>corro de curiosos<br>venta al por menor<br>tenderete<br>horizonte<br>muralla<br>semicerrado<br>pensativo<br>fijarse en la vacía<br><br>突然<br>電球<br>発火する<br>執行委員会<br>労働組合<br>地上階を占領する<br>要求する<br>本部<br>の目的に<br>分かれ道<br><br>bruscamente<br>bombilla eléctrica<br>encenderse<br>la comisión ejecutiva<br>sindicato<br>tomar la planta baja<br>reivindicar<br>la sede<br>con destino a<br>el ramal<br><br>ガス・パイプライン<br>供給する<br>設備<br>周辺プラント<br>融解された<br>プラカード<br>武装解除・解体<br>召集する（形容詞）<br>解体<br>gasoducto<br>abastecer<br>instalacion<br>plantas satélites<br>licuado<br>pancarta<br>el desarme<br>convocante<br>desmantelamiento<br><br>活動<br>Aの資金調達・提供する<br>大志を抱いてる、野心的な<br>控えめな<br>しつこい<br>司祭あ<br>浮浪者<br>しわがれごえ<br>行進<br>バルコニー<br>戻る<br>市長<br>正直な、人がいい<br>campaña<br>financiar A<br>ambicioso<br>sencillo<br>pesado<br>el sacerdote<br>bribón<br>ronco<br>el desfile<br>el balcón<br>regresar<br>alcalde<br>honrado<br><br>デモ<br>狂気<br>馬鹿げている<br>雨の中<br>戻る<br>会議<br>manifestación<br>locura<br>absurdo<br>bajo la lluvia<br>regresar<br>la asemblea<br><br>感謝する<br>に失敗する<br>遠足に行く<br>横になる<br>泊まる<br>即時に<br>宿屋<br>靴を履く<br>総攻撃を仕掛ける<br>子供の頃<br>おやつを食べる<br>理髪師<br>ガルシア・マルケス<br>覚える<br>眉を顰める<br>たとえ会っても<br><br>agradecer<br>fracasar en<br>ir de excursion<br>acostarse<br>alojarse<br>inmediatamente<br>posada(←posar ←pausāre)<br>calzarse los zapatos<br>lanzarse al ataque general<br>en mi infancia<br>merendar<br>peluquero<br>García Márquez<br>aprender de memoría<br>fruncir las cejas/el etrecejo<br>aun al verse<br><br>陸軍大佐<br>失敗<br>ゆっくりと<br>かすかに<br>眉<br>台風<br>耐えられない<br>夕暮れ時になると<br>橙色になった<br>兵隊<br>coronel<br>fracaso<br>con tranquilidad<br>levemente<br>las cejas<br>el tifón<br>insoportable<br>al crepúsculo<br>anaranjado<br>soldado<br><br>暗殺者<br>厳格<br>麦、小麦<br>寛大<br>言葉巧みに<br>セーター<br>習慣で<br>台湾<br>肺癌<br>〜するとすぐに<br>退屈<br>asesino<br>severo<br>el trigo<br>generoso<br>con las palabras mañosas<br>el jersey<br>tener por costumbre [inf], tener la costumbre de [inf]<br>Formosa<br>un cánser de pulmón<br>nada más [inf]<br>aburrimiento<br><br>正座する<br>足が痺れる<br>〜のために（原因）<br>ケルト語<br>偉大な学者<br>〜を知らずに<br>押す<br>切符<br>子供の頃に<br>途中に<br>失業中である<br>崩壊する<br>いき<br><br>sentarse sobre sus piernas<br>dormirse las piernas<br>a causa de~<br>de la lengua celta<br>un gran estudioso<br>sin saber que 直説法<br>empujar<br>billete<br>en mi niñez<br>a medio camino<br>estar sin trabajo<br>venirse abajo<br>a la ida<br><br>株をやる<br>結局<br>靴磨きとして働く<br>〜をする人はほとんどいない<br>最近出版された私の本<br>別便で送る<br>胃痛<br>大風が吹く<br>WW2<br>音を立てずに<br><br>jugar a la bolsa<br>por fin <br>trabajar como limpiabotas<br>hay pocos que <br><br>jugar a la bolsa<br>por fin<br>trabajar como limpiabotas<br>hay pocos que~<br>un libro mío recién publicado<br>enviar por separado<br>el dolor de estómago<br>soplar un viento fuerte<br>la Segunda Guerra Mundial<br>sin hacer ruido<br>hundirse en el mar<br><br>海に沈む<br>鉄の扉<br>隠れる<br>指導者<br>オーブン<br>栽培される<br>貸し出される<br>修理される<br>少し長めの大皿<br>hundirse en el mar<br>puerta de hierro<br>esconderse<br>los dirigentes<br>el horno<br>cultivarse<br>alquilar<br>repararse<br>una fuente un poco alargada<br><br>ハシゴ<br>ポケット<br>途中で<br>雨がやむ<br>砂漠<br>unos escalones<br>el borsillo<br>a medio camino<br>parar de llover<br>un desierto<br><br>＿<br><br>罪を犯した<br>快晴だ<br>イナゴの大群<br>禿げてしまう<br>掛け算<br>睡眠薬<br>最近<br>引っ掻く<br>イタズラずきな<br>逮捕する<br>主導権・発議<br>引き起こす<br>罰金を払う<br>AがBに囲まれる<br>注意のない<br>熱帯の国々 <br>巡回販売員<br>生徒募集中<br>封筒<br>おる<br>焼き鳥<br>バター<br>雇う<br>ペドロ<br>満足である<br>ほんの少しの運<br>成功する<br>確実に<br>メチャクチャなことをしでかす<br>から半だんすると、<br><br>delincuente<br>despejado<br>la nube de langostas<br>pelado.<br>multiplicar<br>somnífero<br>estos días<br>arañar<br>juguetón<br>arrestar<br>la iniciativa<br>causar<br>pagar una multa<br>A es rodeado/a/os/as de B<br>sin escrúpulo<br>los países tropicales<br>vianjantes de comercio<br>se aceptan alumnos<br>la envoltura<br>doblarse<br>so pollos asados<br>mantequilla<br>emplear<br>aun con todo esto<br>una pizca de suerta<br>tener éxito<br>ciertamente<br>cometer un disaparate<br>a juzgar por<br><br><br>【14】<br>自分のためスーツを作る<br>くしで梳かす<br>髪型<br>汚す<br>１個だての家<br>hacerse un traje<br>peinar<br>peinado<br>ensuciarse<br>un chalet<br><br>缶<br>タイヤ<br>理髪店<br>燃える<br>túを使って話す<br>una lata<br>rueda<br>peluquería<br>S quemarse<br>tutear<br><br>親しく<br>喧嘩する、しかる<br>ウインクする<br>評価する e-<br>familiarmente<br>reñir<br>hacer guiño<br>estimar<br><br>自慢する<br>の不平をいう<br>jactarse de<br>quejarse de<br><br>【15例文】<br>El autor le escribiO una carta antes de suicidarse<br>Ahora me arrepiento de todos mis errores.<br>Juan siempre se queja porque le duele la espalda mucho.<br>El  ladrOn portaba una pistola<br>No atrevo a decirtelo ahora porque te vas <br><br><br><br>Aを自慢する<br>平穏に生きる<br>嘆く<br>ピストルを携帯する<br>敢えて...する<br>怒る<br>jactarse de A<br>vivir tranquilo<br>quejarse<br>portar una pistola<br>atraverse a...<br>enfadarse<br>【15】<br>自分のものにする<br>Aを後悔する<br>を自慢する<br>不幸<br>apropiarse de A<br>arrepentirse de A<br>jactarse de A<br>desgracia<br><br><br>大胆にもVする<br>AはVなさる<br>Aの文句を言う<br>［否定文で］〜さえ<br>atreverse a V<br>A dignarse V<br>quejarse de A<br>siquiera <br><br>行儀よくする<br>他人のもの<br>叫びをあげる<br>つづれ織り<br>portarse bien<br>lo ajeno<br>dar unos gritos<br>tapicería<br><br>布<br>カーテン<br>合意する<br>図面を作る<br>tela<br>cortina<br>acordar <br>hacer un plano<br><br>を手に入れる<br>を告白する、を2通りの言い方で<br>を忘れる、を二通りの言い方で<br>石に躓く<br>坂を上る、下る<br>hacer con<br>confesar, confesarse con<br>olvidar, olvidarse de<br>tropezar(se) con una piedra<br>subir [bajar] una cuesta<br><br>とぶつかる<br>角で<br>手を拭く<br>髪にブラシをかける<br>chocar con<br>por la esquina<br>secarse las manos<br>cepillarse el pelo<br><br>ひげをそる<br>手を挙げる<br>棚<br>貸し出される<br>afeitarse el bigote<br>alzar la mano<br>estantería<br>alquilarse<br><br>議員<br>入場券<br><br>diputado<br>entradas<br>taller<br><br>~にもかかわらず<br>石<br>ドラゴン<br>魔女<br>を罰する<br>白髪である<br>快晴である<br>イナゴの大群<br>不毛である<br>深夜に<br>驚くべきことに<br>いのり<br>麻痺させる<br>雨が穏やかに降る<br>財布<br>ポケット<br>ハンカチ<br>仲間<br>繋ぎ目（ジョイント）<br>崩壊する<br>道中で<br>カナリア<br>鳥籠<br>機密の<br>首を絞める<br>イギリスの大艦隊<br>を沈める<br>〜の状態に陥る<br>洋裁店<br>の試験を受ける<br>押すこと<br>押す<br>蝋燭、徹夜<br><br>a pesar de<br>a medianoche<br>dragón<br>apretar la garganta <br>boutique<br><br><br>詩<br>罰金を払う<br>poesía<br>pagar una multa<br>21</div>
+
+
+</div></body></html>

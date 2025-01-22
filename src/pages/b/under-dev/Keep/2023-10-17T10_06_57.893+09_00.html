@@ -1,0 +1,278 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>2023/01/21 12:26:08</title>
+<style type="text/css">
+         body {
+  font-family: 'Roboto Condensed','Droid Sans',arial,sans-serif;
+  font-size: 15px;
+  color: rgba(0,0,0,0.8);
+  word-wrap: break-word;
+  background-color: #e8e8e8;
+}
+
+hr {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-style: inset dashed;
+    border-width: 1px;
+}
+
+.note {
+  outline: none;
+  box-shadow: 0 2px 1px rgba(0,0,0,0.08);
+  box-sizing: border-box;
+
+  max-width: 600px;
+  min-width: 240px;
+  margin: 20px;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.note .heading {
+  font-size: 12px;
+  padding: 15px 15px 0 15px;
+  color: rgba(100,100,100,0.8);
+}
+
+.note .title {
+  font-size: 17px;
+  font-weight: bold;
+  padding: 15px 15px 0 15px;
+  min-height: 28px;
+}
+
+.note .content {
+  padding: 12px 15px 15px 15px;
+  font-family: 'Roboto Slab','Times New Roman',serif;
+  font-size: 14px;
+}
+
+.note .attachments {
+  padding: 0 15px 15px 15px;
+}
+
+.attachments ul {
+  padding: 0;
+  margin: 0;
+}
+
+.attachments li {
+  list-style-type: none;
+  margin-top: 12px;
+}
+
+.attachments li img {
+  max-width: 100%;
+}
+
+.attachments .audio {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4KPCFET0NUWVBFIHN2ZyAgUFVCTElDICctLy9XM0MvL0RURCBTVkcgMS4xLy9FTicgICdodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQnPgo8c3ZnIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHZpZXdCb3g9IjAgMCAyMCAyMCIgdmVyc2lvbj0iMS4xIiB5PSIwcHgiIHg9IjBweCIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIj4KPHBhdGggZD0ibTEgN3Y2aDRsNSA1di0xNmwtNSA1aC00em0xMy41IDNjMC0xLjgtMS0zLjMtMi41LTR2OGMxLjUtMC43IDIuNS0yLjIgMi41LTR6bS0yLjUtOC44djIuMWMyLjkgMC45IDUgMy41IDUgNi43cy0yLjEgNS44LTUgNi43djIuMWM0LTAuOSA3LTQuNSA3LTguOHMtMy03LjktNy04Ljh6Ii8+Cjwvc3ZnPgo=);
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.note .list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.note .listitem {
+}
+
+.note .listitem .bullet {
+  position: absolute;
+}
+
+.note .listitem .text {
+  margin-left: 20px;
+}
+
+.note .identifier {
+  color: rgba(0, 0, 0, 0.5);
+}
+.note .identifier:before {
+  content: "(";
+}
+.note .identifier:after {
+  content: ")";
+}
+
+/* Only show identifiers when the element is hovered. */
+.note .listitem .identifier,
+.note .chip .identifier {
+  display: none;
+}
+
+.note .listitem:hover .identifier,
+.note .chip:hover .identifier {
+  display: inline;
+}
+
+.note .chips {
+  padding: 12px 15px 15px 15px;
+}
+
+.note .chip {
+  display: inline-block;
+  max-width: 198px;
+  margin: 2px 4px 2px 0;
+  padding: 2px 5px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 11px;
+  font-family: 'Roboto','Droid Sans',arial,sans-serif;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.note .chip a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.chip-icon {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-size: 100%;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.annotation.CALENDAR .chip-icon {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzAwMDAwMCI+CiAgICA8cGF0aCBkPSJNMTcgMTJoLTV2NWg1di01ek0xNiAxdjJIOFYxSDZ2Mkg1Yy0xLjExIDAtMS45OS45LTEuOTkgMkwzIDE5YzAgMS4xLjg5IDIgMiAyaDE0YzEuMSAwIDItLjkgMi0yVjVjMC0xLjEtLjktMi0yLTJoLTFWMWgtMnptMyAxOEg1VjhoMTR2MTF6Ii8+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+Cjwvc3ZnPgo=);
+}
+
+.annotation.DOCS .chip-icon {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzAwMDAwMCI+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+CiAgICA8cGF0aCBkPSJNMTkgM0g1Yy0xLjEgMC0yIC45LTIgMnYxNGMwIDEuMS45IDIgMiAyaDE0YzEuMSAwIDItLjkgMi0yVjVjMC0xLjEtLjktMi0yLTJ6bS0xLjk5IDZIN1Y3aDEwLjAxdjJ6bTAgNEg3di0yaDEwLjAxdjJ6bS0zIDRIN3YtMmg3LjAxdjJ6Ii8+Cjwvc3ZnPgo=);
+}
+
+.annotation.GMAIL .chip-icon {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzAwMDAwMCI+CiAgICA8cGF0aCBmaWxsPSJub25lIiBkPSJNLTYxOC0yMTA0SDc4MnYzNjAwSC02MTh6TTAgMGgyNHYyNEgweiIvPgogICAgPHBhdGggZD0iTTIwIDRINGMtMS4xIDAtMiAuOS0yIDJ2MTJjMCAxLjEuOSAyIDIgMmgxNmMxLjEgMCAyLS45IDItMlY2YzAtMS4xLS45LTItMi0yem0wIDE0aC0yVjkuMkwxMiAxMyA2IDkuMlYxOEg0VjZoMS4ybDYuOCA0LjJMMTguOCA2SDIwdjEyeiIvPgo8L3N2Zz4K);
+}
+
+.annotation.SHEETS .chip-icon {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzAwMDAwMCI+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+CiAgICA8cGF0aCBkPSJNMTkgM0g1Yy0xLjEgMC0xLjk5LjktMS45OSAyTDMgOHYxMWMwIDEuMS45IDIgMiAyaDE0YzEuMSAwIDItLjkgMi0yVjVjMC0xLjEtLjktMi0yLTJ6bTAgOGgtOHY4SDl2LThINVY5aDRWNWgydjRoOHYyeiIvPgo8L3N2Zz4K);
+}
+
+.annotation.SLIDES .chip-icon {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbD0iIzAwMDAwMCI+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+CiAgICA8cGF0aCBkPSJNMTkgM0g1Yy0xLjEgMC0xLjk5LjktMS45OSAydjE0YzAgMS4xLjg5IDIgMS45OSAyaDE0YzEuMSAwIDItLjkgMi0yVjVjMC0xLjEtLjktMi0yLTJ6bTAgMTNINVY4aDE0djh6Ii8+Cjwvc3ZnPgo=);
+}
+
+.annotation.WEBLINK .chip-icon {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzAwMDAwMCI+CiAgICA8cGF0aCBkPSJNMTkgNEg1Yy0xLjExIDAtMiAuOS0yIDJ2MTJjMCAxLjEuODkgMiAyIDJoMTRjMS4xIDAgMi0uOSAyLTJWNmMwLTEuMS0uODktMi0yLTJ6bTAgMTRINVY4aDE0djEweiIvPgogICAgPHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPgo8L3N2Zz4K);
+}
+
+.sharees h2 {
+  display: none;
+}
+
+.sharees ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 15px 15px 15px;
+}
+
+.sharees li {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzAwMDAwMCI+CiAgICA8cGF0aCBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptMCAzYzEuNjYgMCAzIDEuMzQgMyAzcy0xLjM0IDMtMyAzLTMtMS4zNC0zLTMgMS4zNC0zIDMtM3ptMCAxNC4yYy0yLjUgMC00LjcxLTEuMjgtNi0zLjIyLjAzLTEuOTkgNC0zLjA4IDYtMy4wOCAxLjk5IDAgNS45NyAxLjA5IDYgMy4wOC0xLjI5IDEuOTQtMy41IDMuMjItNiAzLjIyeiIvPgogICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPgo8L3N2Zz4K);
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sharees li.group {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzAwMDAwMCI+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+CiAgICA8cGF0aCBkPSJNMTYgMTFjMS42NiAwIDIuOTktMS4zNCAyLjk5LTNTMTcuNjYgNSAxNiA1Yy0xLjY2IDAtMyAxLjM0LTMgM3MxLjM0IDMgMyAzem0tOCAwYzEuNjYgMCAyLjk5LTEuMzQgMi45OS0zUzkuNjYgNSA4IDVDNi4zNCA1IDUgNi4zNCA1IDhzMS4zNCAzIDMgM3ptMCAyYy0yLjMzIDAtNyAxLjE3LTcgMy41VjE5aDE0di0yLjVjMC0yLjMzLTQuNjctMy41LTctMy41em04IDBjLS4yOSAwLS42Mi4wMi0uOTcuMDUgMS4xNi44NCAxLjk3IDEuOTcgMS45NyAzLjQ1VjE5aDZ2LTIuNWMwLTIuMzMtNC42Ny0zLjUtNy0zLjV6Ii8+Cjwvc3ZnPgo=);
+}
+
+.note .meta-icons {
+  float: right;
+}
+
+.note .meta-icons span {
+  display: inline-block;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 22px;
+  height: 22px;
+  padding-left: 4px;
+}
+
+.meta-icons .pinned {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMHB4IiBoZWlnaHQ9IjIwcHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzQyODVmNCI+DQogICAgPHBhdGggZD0iTTE2IDVoLjk5TDE3IDNIN3YyaDF2N2wtMiAydjJoNXY2bDEgMSAxLTF2LTZoNXYtMmwtMi0yVjV6Ii8+DQogICAgPHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIvPg0KPC9zdmc+);
+}
+
+.meta-icons .archived {
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4KPCFET0NUWVBFIHN2ZyAgUFVCTElDICctLy9XM0MvL0RURCBTVkcgMS4xLy9FTicgICdodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQnPgo8c3ZnIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJlc2VydmUiIHZpZXdCb3g9IjAgMCAxOCAxOCIgdmVyc2lvbj0iMS4xIiB5PSIwcHgiIHg9IjBweCIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE4IDE4Ij4KPHBhdGggZD0ibTE2LjYgM2wtMS4yLTEuNWMtMC4yLTAuMy0wLjYtMC41LTEtMC41aC0xMC43Yy0wLjQgMC0wLjggMC4yLTEgMC41bC0xLjMgMS41Yy0wLjIgMC4zLTAuNCAwLjctMC40IDEuMXYxMS4xYzAgMSAwLjggMS44IDEuOCAxLjhoMTIuNGMxIDAgMS44LTAuOCAxLjgtMS44di0xMS4xYzAtMC40LTAuMi0wLjgtMC40LTEuMXptLTcuNiAxMC45bC00LjktNC45aDMuMXYtMS44aDMuNnYxLjhoMy4xbC00LjkgNC45em0tNi4xLTExLjFsMC43LTAuOWgxMC43bDAuOCAwLjloLTEyLjJ6Ii8+Cjwvc3ZnPgo=);
+}
+
+.meta-icons .trashed {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjE4cHgiIHdpZHRoPSIxOHB4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0iIzAwMDAwMCI+DQogPHBhdGggZD0ibTEyIDM4YzAgMi4yMSAxLjc5IDQgNCA0aDE2YzIuMjEgMCA0LTEuNzkgNC00di0yNGgtMjR2MjR6bTI2LTMwaC03bC0yLTJoLTEwbC0yIDJoLTd2NGgyOHYtNHoiLz4NCiA8cGF0aCBkPSJtMCAwaDQ4djQ4aC00OHoiIGZpbGw9Im5vbmUiLz4NCjwvc3ZnPg==);
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+.RED {
+  background-color: rgb(255, 109, 63) !important;
+}
+.ORANGE {
+  background-color: rgb(255, 155, 0) !important;
+}
+.YELLOW {
+  background-color: rgb(255, 218, 0) !important;
+}
+.GREEN {
+  background-color: rgb(149, 214, 65) !important;
+}
+.TEAL {
+  background-color: rgb(28, 232, 181) !important;
+}
+.BLUE {
+  background-color: rgb(63, 195, 255) !important;
+}
+.GRAY {
+  background-color: rgb(184, 196, 201) !important;
+}
+
+/* go/keep-more-colors-eng */
+.CERULEAN {
+  background-color: rgb(130, 177, 255) !important;
+}
+.PURPLE {
+  background-color: rgb(179, 136, 255) !important;
+}
+.PINK {
+  background-color: rgb(248, 187, 208) !important;
+}
+.BROWN {
+  background-color: rgb(215, 204, 200) !important;
+}
+
+      </style></head>
+<body><div class="note DEFAULT"><div class="heading"><div class="meta-icons">
+
+</div>
+2023/01/21 12:26:08</div>
+
+<div class="content">読み方	中学校用	高校用<br>가	佳, 假, 價, 加, 可, 家, 歌, 街	暇, 架<br>각	各, 脚, 角	刻, 却, 覺, 閣<br>간	干, 看, 間	刊, 姦, 幹, 懇, 簡, 肝<br>갈	渴	<br>감	感, 敢, 減, 甘	監, 鑑<br>갑	甲	<br>강	强, 江, 講, 降	剛, 康, 綱, 鋼<br>개	個, 改, 皆, 開	介, 慨, 槪, 蓋<br>객	客	<br>갱	更	<br>거	去, 居, 巨, 擧, 車	拒, 據, 距<br>건	乾, 建	件, 健<br>걸		乞, 傑<br>검		儉, 劍, 檢<br>격		擊, 格, 激, 隔<br>견	堅, 犬, 見	牽, 絹, 肩, 遣<br>결	決, 潔, 結	缺<br>겸		兼, 謙<br>경	京, 庚, 慶, 敬, 景, 競, 經, 耕, 輕, 驚	傾, 卿, 境, 徑, 硬, 竟, 警, 鏡, 頃<br>계	季, 溪, 界, 癸, 計, 鷄	係, 啓, 契, 戒, 桂, 械, 系, 繫, 繼, 階<br>고	古, 告, 固, 故, 考, 苦, 高	姑, 孤, 庫, 枯, 稿, 顧, 鼓<br>곡	曲, 穀, 谷	哭<br>곤	困, 坤	<br>골	骨	<br>공	公, 共, 功, 工, 空	供, 孔, 恐, 恭, 攻, 貢<br>과	果, 科, 課, 過	寡, 誇<br>곽		郭<br>관	官, 觀, 關	冠, 寬, 慣, 管, 貫, 館<br>광	光, 廣	狂, 鑛<br>괘		掛<br>괴		塊, 壞, 怪, 愧<br>교	交, 敎, 校, 橋	巧, 矯, 較, 郊<br>구	久, 九, 口, 句, 救, 求, 究, 舊	丘, 俱, 具, 區, 懼, 拘, 構, 狗, 球, 苟, 驅, 龜<br>국	國	局, 菊<br>군	君, 軍, 郡	群<br>굴		屈<br>궁	弓	宮, 窮<br>권	勸, 卷, 權	券, 拳<br>궐		厥<br>궤		軌<br>귀	歸, 貴	鬼<br>규		叫, 糾, 規<br>균	均	菌<br>극	極	克, 劇<br>근	勤, 根, 近	僅, 斤, 謹<br>금	今, 禁, 金	琴, 禽, 錦<br>급	及, 急, 給	級<br>긍		肯<br>기	其, 基, 己, 幾, 技, 旣, 期, 氣, 記, 起	企, 器, 奇, 寄, 忌, 旗, 棄, 機, 欺, 畿, 祈, 紀, 豈, 飢, 騎<br>긴		緊<br>길	吉	<br>나		那<br>낙		諾<br>난	暖, 難	<br>남	南, 男	<br>납		納<br>낭		娘<br>내	乃, 內	奈, 耐<br>녀	女	<br>년	年	<br>념	念	<br>녕		寧<br>노	怒	努, 奴<br>농	農	<br>뇌		惱, 腦<br>능	能	<br>니		泥<br>다	多	茶<br>단	丹, 但, 單, 短, 端	團, 壇, 斷, 旦, 檀, 段<br>달	達	<br>담	談	擔, 淡<br>답	答	畓, 踏<br>당	堂, 當	唐, 糖, 黨<br>대	代, 大, 對, 待	帶, 臺, 貸, 隊<br>덕	德	<br>도	刀, 到, 圖, 島, 度, 徒, 道, 都	倒, 塗, 導, 挑, 桃, 渡, 盜, 稻, 跳, 逃, 途, 陶<br>독	獨, 讀	毒, 督, 篤<br>돈		敦, 豚<br>돌		突<br>동	冬, 動, 同, 東, 洞, 童	凍, 銅<br>두	斗, 豆, 頭	<br>둔		屯, 鈍<br>득	得	<br>등	燈, 登, 等	騰<br>라		羅<br>락	樂, 落	絡<br>란	卵	亂, 欄, 蘭<br>람		濫, 覽<br>랑	浪, 郞	廊<br>래	來	<br>랭	冷	<br>략		掠, 略<br>량	兩, 涼, 良, 量	梁, 糧, 諒<br>려	旅	勵, 慮, 麗<br>력	力, 歷	曆<br>련	練, 連	憐, 戀, 聯, 蓮, 鍊<br>렬	列, 烈	劣, 裂<br>렴		廉<br>렵		獵<br>령	令, 領	嶺, 零, 靈<br>례	例, 禮	隷<br>로	勞, 老, 路, 露	爐<br>록	綠	祿, 錄, 鹿<br>론	論	<br>롱		弄<br>뢰		賴, 雷<br>료	料	了, 僚<br>룡		龍<br>루		屢, 樓, 淚, 漏, 累<br>류	柳, 流, 留	類<br>륙	六, 陸	<br>륜	倫	輪<br>률	律	栗, 率<br>륭		隆<br>릉		陵<br>리	利, 李, 理, 里	吏, 履, 梨, 裏, 離<br>린		鄰<br>림	林	臨<br>립	立	<br>마	馬	磨, 麻<br>막	莫	幕, 漠<br>만	晚, 滿, 萬	慢, 漫<br>말	末	<br>망	亡, 忙, 忘, 望	妄, 罔, 茫<br>매	妹, 每, 買, 賣	埋, 媒, 梅<br>맥	麥	脈<br>맹		孟, 猛, 盟, 盲<br>면	免, 勉, 眠, 面	綿<br>멸		滅<br>명	名, 命, 明, 鳴	冥, 銘<br>모	暮, 母, 毛	侮, 冒, 募, 慕, 某, 模, 謀, 貌<br>목	木, 目	牧, 睦<br>몰		沒<br>몽		夢, 蒙<br>묘	卯, 妙	墓, 廟, 苗<br>무	務, 戊, 武, 無, 舞, 茂	貿, 霧<br>묵	墨	默<br>문	問, 文, 聞, 門	<br>물	勿, 物	<br>미	味, 尾, 未, 米, 美	微, 眉, 迷<br>민	民	憫, 敏<br>밀	密	蜜<br>박	朴	博, 拍, 泊, 薄, 迫<br>반	半, 反, 飯	伴, 叛, 班, 盤, 般, 返<br>발	發	拔, 髮<br>방	房, 放, 方, 訪, 防	倣, 傍, 妨, 芳, 邦<br>배	拜, 杯	倍, 培, 排, 背, 輩, 配<br>백	白, 百	伯<br>번	番	煩, 繁, 飜<br>벌	伐	罰<br>범	凡	犯, 範<br>법	法	<br>벽		壁, 碧<br>변	變	辨, 辯, 邊<br>별	別	<br>병	丙, 兵, 病	屛, 竝<br>보	保, 報, 步	寶, 普, 補, 譜<br>복	伏, 復, 服, 福	卜, 腹, 複, 覆<br>본	本	<br>봉	奉, 逢	封, 峯, 蜂, 鳳<br>부	否, 夫, 婦, 富, 扶, 浮, 父, 部	付, 副, 府, 符, 簿, 腐, 負, 賦, 赴, 附<br>북	北	<br>분	分	墳, 奔, 奮, 憤, 粉, 紛<br>불	不, 佛	拂<br>붕	朋	崩<br>비	備, 比, 悲, 非, 飛, 鼻	卑, 妃, 婢, 批, 碑, 祕, 肥, 費<br>빈	貧	賓, 頻<br>빙	氷	聘<br>사	事, 仕, 使, 史, 四, 士, 寺, 巳, 射, 師, 思, 死, 私, 絲, 舍, 謝	似, 司, 寫, 捨, 斜, 斯, 査, 沙, 祀, 社, 蛇, 詐, 詞, 賜, 辭, 邪<br>삭		削, 朔<br>산	山, 散, 產, 算	<br>살	殺	<br>삼	三	<br>상	上, 傷, 商, 喪, 尙, 常, 想, 相, 賞, 霜	像, 償, 嘗, 床, 桑, 狀, 祥, 裳, 詳, 象<br>새		塞<br>색	色	索<br>생	生	<br>서	序, 暑, 書, 西	庶, 徐, 恕, 敍, 緖, 署, 誓, 逝<br>석	夕, 席, 惜, 昔, 石	析, 釋<br>선	仙, 先, 善, 線, 船, 選, 鮮	宣, 旋, 禪<br>설	舌, 設, 說, 雪	<br>섭		攝, 涉<br>성	城, 姓, 性, 成, 星, 盛, 省, 聖, 聲, 誠	<br>세	世, 勢, 歲, 洗, 稅, 細	<br>소	小, 少, 所, 消, 笑, 素	召, 掃, 昭, 燒, 疏, 蔬, 蘇, 訴, 騷<br>속	俗, 續, 速	屬, 束, 粟<br>손	孫	損<br>송	松, 送	訟, 誦, 頌<br>쇄		刷, 鎖<br>쇠		𮕩<br>수	修, 受, 壽, 守, 愁, 手, 授, 收, 數, 樹, 水, 秀, 誰, 雖, 須, 首	囚, 垂, 帥, 搜, 殊, 獸, 睡, 輸, 遂, 隨, 需<br>숙	叔, 宿, 淑	孰, 熟, 肅<br>순	純, 順	巡, 循, 旬, 殉, 瞬, 脣<br>술	戌	術, 述<br>숭	崇	<br>습	拾, 習	濕, 襲<br>승	乘, 勝, 承	僧, 昇<br>시	始, 市, 施, 是, 時, 示, 視, 詩, 試	侍, 矢<br>식	式, 植, 識, 食	息, 飾<br>신	信, 新, 申, 神, 臣, 身, 辛	伸, 愼, 晨<br>실	失, 室, 實	<br>심	心, 深, 甚	審, 尋<br>십	十	<br>쌍		雙<br>씨	氏	<br>아	兒, 我	亞, 牙, 芽, 雅, 餓<br>악	惡	岳<br>안	安, 案, 眼, 顔	岸, 雁<br>알		謁<br>암	巖, 暗	<br>압		壓, 押<br>앙	仰	央, 殃<br>애	哀, 愛	涯<br>액		厄, 額<br>야	也, 夜, 野	耶<br>약	弱, 約, 若, 藥	躍<br>양	揚, 洋, 羊, 讓, 陽, 養	壤, 楊, 樣<br>어	於, 漁, 語, 魚	御<br>억	億, 憶	抑<br>언	言	焉<br>엄	嚴	<br>업	業	<br>여	余, 如, 汝, 與, 餘	予, 輿<br>역	亦, 易, 逆	域, 役, 疫, 譯, 驛<br>연	然, 煙, 硏	宴, 延, 沿, 演, 燃, 燕, 緣, 軟, 鉛<br>열	悅, 熱	閱<br>염	炎	染, 鹽<br>엽	葉	<br>영	榮, 永, 英, 迎	影, 映, 泳, 營, 詠<br>예	藝	譽, 銳, 豫<br>오	五, 午, 吾, 悟, 烏, 誤	傲, 嗚, 娛, 汚<br>옥	屋, 玉	獄<br>온	溫	<br>옹		擁, 翁<br>와	瓦, 臥	<br>완	完	緩<br>왈	曰	<br>왕	往, 王	<br>외	外	畏<br>요	要	搖, 腰, 謠, 遙<br>욕	欲, 浴	慾, 辱<br>용	勇, 容, 用	庸<br>우	于, 又, 友, 右, 宇, 尤, 憂, 牛, 遇, 雨	偶, 優, 愚, 羽, 郵<br>운	云, 運, 雲	韻<br>웅	雄	<br>원	元, 原, 圓, 園, 怨, 遠, 願	員, 援, 源, 院<br>월	月	越<br>위	位, 偉, 危, 威, 爲	僞, 圍, 委, 慰, 緯, 胃, 衛, 謂, 違<br>유	唯, 幼, 有, 柔, 油, 猶, 由, 遊, 遺, 酉	乳, 儒, 幽, 悠, 惟, 愈, 維, 裕, 誘<br>육	肉, 育	<br>윤		潤, 閏<br>은	恩, 銀	隱<br>을	乙	<br>음	吟, 陰, 音, 飮	淫<br>읍	泣, 邑	<br>응	應	凝<br>의	依, 意, 矣, 義, 衣, 議, 醫	儀, 宜, 疑<br>이	二, 以, 已, 異, 移, 而, 耳	夷<br>익	益	翼<br>인	人, 仁, 印, 因, 寅, 引, 忍, 認	姻<br>일	一, 日	逸<br>임	壬	任, 賃<br>입	入	<br>자	姊, 子, 字, 慈, 者, 自	刺, 姿, 恣, 紫, 茲, 資<br>작	作, 昨	爵, 酌<br>잔		殘<br>잠		暫, 潛<br>잡		雜<br>장	場, 壯, 將, 章, 長	丈, 墻, 奬, 帳, 張, 掌, 粧, 腸, 臟, 莊, 葬, 藏, 裝, 障<br>재	再, 哉, 在, 才, 材, 栽, 財	宰, 災, 裁, 載<br>쟁	爭	<br>저	低, 著, 貯	底, 抵<br>적	敵, 的, 赤, 適	寂, 摘, 滴, 積, 籍, 績, 賊, 跡<br>전	傳, 全, 典, 前, 展, 戰, 田, 錢, 電	專, 殿, 轉<br>절	節, 絕	切, 折, 竊<br>점	店	占, 漸, 點<br>접	接	蝶<br>정	丁, 井, 停, 定, 庭, 情, 政, 正, 淨, 精, 貞, 靜, 頂	亭, 廷, 征, 整, 程, 訂<br>제	帝, 弟, 祭, 第, 製, 諸, 除, 題	制, 堤, 提, 濟, 際, 齊<br>조	兆, 助, 早, 朝, 祖, 調, 造, 鳥	弔, 操, 條, 潮, 照, 燥, 租, 組<br>족	族, 足	<br>존	存, 尊	<br>졸	卒	拙<br>종	宗, 從, 種, 終, 鐘	縱<br>좌	坐, 左	佐, 座<br>죄	罪	<br>주	主, 住, 宙, 晝, 朱, 注, 走, 酒	周, 奏, 州, 柱, 株, 洲, 珠, 舟, 鑄<br>죽	竹	<br>준		俊, 準, 遵<br>중	中, 衆, 重	仲<br>즉	卽	<br>증	增, 曾, 證	憎, 症, 蒸, 贈<br>지	之, 只, 地, 志, 持, 指, 支, 枝, 止, 知, 紙, 至	智, 池, 誌, 遲<br>직	直	織, 職<br>진	盡, 眞, 辰, 進	振, 珍, 鎭, 陣, 陳, 震<br>질	質	姪, 疾, 秩<br>집	執, 集	<br>징		徵, 懲<br>차	且, 借, 次, 此	差<br>착	着	捉, 錯<br>찬		讚, 贊<br>찰	察	<br>참	參	慘, 慙<br>창	唱, 昌, 窓	倉, 創, 暢, 蒼<br>채	採, 菜	債, 彩<br>책	冊, 責	策<br>처	妻, 處	<br>척	尺	戚, 拓, 斥<br>천	千, 天, 川, 泉, 淺	薦, 賤, 踐, 遷<br>철	鐵	哲, 徹<br>첨		尖, 添<br>첩		妾<br>청	晴, 淸, 聽, 請, 靑	廳<br>체	體	替, 滯, 逮, 遞<br>초	初, 招, 草	抄, 礎, 秒, 肖, 超<br>촉		促, 燭, 觸<br>촌	寸, 村	<br>총		總, 聰, 銃<br>최	最	催<br>추	推, 秋, 追	抽, 醜<br>축	丑, 祝	畜, 築, 縮, 蓄, 逐<br>춘	春	<br>출	出	<br>충	充, 忠, 蟲	衝<br>취	取, 吹, 就	臭, 趣, 醉<br>측		側, 測<br>층		層<br>치	治, 致, 齒	値, 恥, 置<br>칙	則	<br>친	親	<br>칠	七	漆<br>침	針	侵, 寢, 枕, 沈, 浸<br>칭		稱<br>쾌	快	<br>타	他, 打	墮, 妥<br>탁		卓, 托, 濁, 濯<br>탄		彈, 歎, 炭, 誕<br>탈	脫	奪<br>탐	探	貪<br>탑		塔<br>탕		湯<br>태	太, 泰	怠, 態, 殆<br>택	宅	擇, 澤<br>토	土	吐, 討<br>통	統, 通	痛<br>퇴	退	<br>투	投	透, 鬪<br>특	特	<br>파	波, 破	把, 播, 派, 罷, 頗<br>판	判	板, 版, 販<br>팔	八	<br>패	敗, 貝	<br>편	便, 片, 篇	偏, 編, 遍<br>평	平	評<br>폐	閉	幣, 廢, 弊, 肺, 蔽<br>포	布, 抱	包, 捕, 浦, 胞, 飽<br>폭	暴	幅, 爆<br>표	表	標, 漂, 票<br>품	品	<br>풍	豐, 風	<br>피	彼, 皮	疲, 被, 避<br>필	匹, 必, 筆	畢<br>하	下, 何, 夏, 河, 賀	荷<br>학	學	鶴<br>한	寒, 恨, 漢, 閑, 限, 韓	旱, 汗<br>할		割<br>함		含, 咸, 陷<br>합	合	<br>항	恒	巷, 抗, 港, 航, 項<br>해	亥, 害, 海, 解	奚, 該<br>핵		核<br>행	幸, 行	<br>향	向, 鄕, 香	享, 響<br>허	虛, 許	<br>헌		憲, 獻, 軒<br>험		險, 驗<br>혁	革	<br>현	現, 賢	懸, 玄, 絃, 縣, 顯<br>혈	血	穴<br>혐		嫌<br>협	協	脅<br>형	兄, 刑, 形	亨, 螢, 衡<br>혜	惠	兮, 慧<br>호	乎, 呼, 好, 戶, 湖, 虎, 號	互, 毫, 浩, 胡, 護, 豪<br>혹	或	惑<br>혼	婚, 混	昏, 魂<br>홀		忽<br>홍	紅	弘, 洪, 鴻<br>화	化, 和, 火, 畫, 花, 華, 話, 貨	禍, 禾<br>확		擴, 確, 穫<br>환	患, 歡	丸, 換, 環, 還<br>활	活	<br>황	皇, 黃	況, 荒<br>회	回, 會	悔, 懷<br>획		劃, 獲<br>횡		橫<br>효	孝, 效	曉<br>후	厚, 後	侯, 候<br>훈	訓	<br>훼		毁<br>휘		揮, 輝<br>휴	休	携<br>흉	凶, 胸	<br>흑	黑	<br>흡		吸<br>흥	興	<br>희	喜, 希	戲, 稀</div>
+
+
+</div></body></html>
