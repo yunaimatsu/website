@@ -13,26 +13,28 @@ import Footer from './frame/footer/Footer.astro';
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta
-			charset="UTF-8"
-			name="description"
-			content="Astro description"
-			name="viewport"
-			content="width=device-width"
-			name="generator"
-			content={Astro.generator}
-		/>
-		<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-		<title>{title}</title>
-	</head>
-	<body style="margin: 0px; background-color: var(--bg-color-l)">
-		<Header />
-		<main>
-			<slot />
-		</main>
-		<Footer />
-	</body>
+<head>
+	<meta
+		charset="UTF-8"
+		name="description"
+		content="Astro description"
+		name="viewport"
+		content="width=device-width"
+		name="generator"
+		content={Astro.generator}
+	/>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script> -->
+	<!-- <script>mermaid.initialize({ startOnLoad: true });</script> -->
+	<title>{title}</title>
+</head>
+<body style="margin: 0px; background-color: var(--bg-color-l)">
+	<Header />
+	<main>
+		<slot />
+	</main>
+	<Footer />
+</body>
 </html>
 <style>
 	@import "./styles/global.css";
