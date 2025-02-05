@@ -4,6 +4,11 @@ This repository contains the source code for my personal {portfolio, blog} websi
 
 ---
 
+## See also
+[Wiki](https://github.com/yunaimatsu/website/wiki)
+
+---
+
 ## Table of Contents
 
 1. [Technologies Used](#technologies-used)  
