@@ -6,7 +6,7 @@ This repository contains the source code for my personal {portfolio, blog} websi
 
 ## See also
 [Wiki](https://github.com/yunaimatsu/website/wiki)
-
+[Formal Languages](https://github.com/yunaimatsu/website/tree/main/src%2Fpages%2Fb%2Flang%2Ff)
 ---
 
 ## Table of Contents
