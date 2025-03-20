@@ -1,10 +1,16 @@
 ## 3 components of a class
 
-### 1. Name field
+### 0. Name field
 Class name
 
-### 2. Attribute field
+### 1. Attribute field
 Member variables
 
-### 3. Manipulation field
+### 2. Manipulation field
 Member methods
+
+---
+
+`+`: Public
+`-`: Private
+`#`: Protected
